@@ -2,24 +2,12 @@ html {
 	background-color:#d9d3cc;
 }
 
-/*
-dde6e3
-c1d1cd
-6b6f73
-383637
-a88f81
-d9d3cc
-*/
-
-
 body {
 	background-color:#c1d1cd;
-    font-family: 'Alegreya Sans', sans-serif;
-    
-    margin-left: auto;
-    margin-right: auto;
-    
-    width: 60%;
+	font-family: 'Alegreya Sans', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
 }
 
 h1 {
@@ -66,63 +54,54 @@ pre {
 }
 
 header {
-    background-color:#6b6f73;
-    color:#dde6e3;
-    text-align:center;
-    padding:5px;
+	background-color:#6b6f73;
+	color:#dde6e3;
+	text-align:center;
+	padding:5px;
 }
 
 nav {
 	background-color:#dde6e3;
 	color:#4a4340;
-
 	font-size:24px;
 	line-height:32px;
-    
-    margin-left: auto;
-    margin-right: auto;
-    
-    width:60%;
-    height: 32px;
-    
-    padding:10px; 
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	height: 32px;
+	padding:10px; 
 }
 
 section {
 
 	margin-left: auto;
-    margin-right: auto;
-    
-    
+	margin-right: auto;
 	background-color:#dde6e3;
-    color:#383637;
-    
-    width: 60%;
-    
-    padding:10px;
+	color:#383637;
+	width: 60%;
+	padding:10px;
 }
 
 footer {
-    background-color:#6b6f73;
-    color:#dde6e3;
-    clear:both;
-    text-align:center;
-    padding:5px; 
+	background-color:#6b6f73;
+	color:#dde6e3;
+	clear:both;
+	text-align:center;
+	padding:5px; 
 }
 
 ul {
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 li {
-	 float: left;
-	 padding-left:10px;
-	 padding-right:10px;
+	float: left;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 li:hover {
 	background-color:#a88f81;
 }
-
