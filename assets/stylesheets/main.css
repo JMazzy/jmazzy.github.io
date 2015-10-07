@@ -5,7 +5,7 @@ body {
 	font-family: 'Alegreya Sans', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	width:60%;
+	width: 60%;
 }
 
 h1 {
@@ -75,7 +75,6 @@ section {
 	margin-right: auto;
 	background-color:#ccc;
 	color:#222;
-	width: 60%;
 	padding:10px;
 }
 
