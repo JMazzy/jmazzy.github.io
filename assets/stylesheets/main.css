@@ -125,13 +125,13 @@ li:hover {
 }
 
 #column_left {
-	width: 67%;
+	width: 60%;
 	float:left;
 }
 
 #column_right {
-	width: 33%;
-	float:left;
+	width: 30%;
+	float:right;
 }
 
 #headshot {
