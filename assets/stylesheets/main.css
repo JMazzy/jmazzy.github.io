@@ -99,12 +99,12 @@ li {
 }
 
 li:hover {
-	background-color:#a88f81;
+	background-color:#1b3c77;
 }
 
 #page_title {
 	text-align: center;
-	font-size: 64px;
+	font-size: 32px;
 	font-style: bold;
 	line-height: 64px;
 }
