@@ -108,3 +108,15 @@ li:hover {
 	font-style: bold;
 	line-height: 64px;
 }
+
+#column_left {
+	width: 20%;
+}
+
+#column_right {
+	width: 20%;
+}
+
+#column_center {
+	width: 60%;
+}
