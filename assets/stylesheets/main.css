@@ -76,7 +76,6 @@ header {
 	color:#dde6e3;
 	text-align:center;
 	height:256px;
-	padding:5px;
 }
 
 nav {
@@ -87,8 +86,6 @@ nav {
 	line-height:32px;
 	margin-left: auto;
 	margin-right: auto;
-	width:100%;
-	padding:10px;
 }
 
 nav a:link {
@@ -105,7 +102,6 @@ section {
 	margin-right: auto;
 	background-color:#ccc;
 	color:#222;
-	padding:10px;
 }
 
 footer {
@@ -113,7 +109,6 @@ footer {
 	color:#ccc;
 	clear:both;
 	text-align:center;
-	padding:5px;
 }
 
 #page_title {
