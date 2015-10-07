@@ -12,6 +12,12 @@ body {
 	width: 60%;
 }
 
+#page_title {
+	text-align: center;
+	font-size: 64px;
+	font-style: bold;
+}
+
 h1 {
 	font-size: 24px;
 	font-style: bold;
