@@ -91,6 +91,14 @@ nav {
 	width:100%;
 }
 
+nav a {
+	color:#ccc;
+}
+
+nav a:hover {
+	background-color:#359;
+}
+
 section {
 
 	margin-left: auto;
@@ -106,16 +114,6 @@ footer {
 	clear:both;
 	text-align:center;
 	padding:5px;
-}
-
-nav {
-	float: left;
-	padding-left:10px;
-	padding-right:10px;
-}
-
-nav:hover {
-	background-color:#359;
 }
 
 #page_title {
