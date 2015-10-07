@@ -91,7 +91,7 @@ nav {
 	padding:10px;
 }
 
-nav a {
+nav a:link {
 	color:#ccc;
 }
 
