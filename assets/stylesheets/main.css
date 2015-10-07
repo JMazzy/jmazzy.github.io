@@ -1,8 +1,8 @@
 @import url:("reset.css");
 
 html {
-	background-color:#ccc;
-	background-image: url("../images/river.jpg");
+	background-color:#777;
+	/*background-image: url("../images/river.jpg");*/
 }
 
 body {
