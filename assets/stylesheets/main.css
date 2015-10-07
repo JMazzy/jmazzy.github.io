@@ -111,12 +111,15 @@ li:hover {
 
 #column_left {
 	width: 20%;
+	float:left;
 }
 
 #column_right {
 	width: 20%;
+	float:left;
 }
 
 #column_center {
 	width: 60%;
+	float:left;
 }
