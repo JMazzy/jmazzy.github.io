@@ -1,11 +1,7 @@
 @import url:("reset.css");
 
-html {
-	background-color:#d9d3cc;
-}
-
 body {
-	background-color:#c1d1cd;
+	background-color:#aaaaaa;
 	font-family: 'Alegreya Sans', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
@@ -56,14 +52,14 @@ pre {
 }
 
 header {
-	background-color:#6b6f73;
+	background-color:#2C4D88;
 	color:#dde6e3;
 	text-align:center;
 	padding:5px;
 }
 
 nav {
-	background-color:#dde6e3;
+	background-color:#2C4D88;
 	color:#4a4340;
 	font-size:24px;
 	line-height:32px;
