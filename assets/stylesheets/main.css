@@ -120,7 +120,7 @@ li:hover {
 }
 
 #page_title {
-	text-align: center;
+	text-align: left;
 	font-size: 32px;
 	font-style: bold;
 	line-height: 64px;
@@ -142,5 +142,5 @@ li:hover {
 }
 
 #headshot {
-	
+	float:left;
 }
