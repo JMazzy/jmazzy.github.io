@@ -12,12 +12,6 @@ body {
 	width: 60%;
 }
 
-#page_title {
-	text-align: center;
-	font-size: 64px;
-	font-style: bold;
-}
-
 h1 {
 	font-size: 24px;
 	font-style: bold;
@@ -112,4 +106,10 @@ li {
 
 li:hover {
 	background-color:#a88f81;
+}
+
+#page_title {
+	text-align: center;
+	font-size: 64px;
+	font-style: bold;
 }
