@@ -1,11 +1,11 @@
 @import url:("reset.css");
 
 html {
+	background-color:#ccc;
 	background-image: url("jmazzy.github.io/assets/images/river.jpg");
 }
 
 body {
-	background-color:#ccc;
 	font-family: 'Droid Sans', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
