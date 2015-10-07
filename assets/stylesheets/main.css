@@ -107,19 +107,13 @@ footer {
 	padding:5px;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-li {
+nav {
 	float: left;
 	padding-left:10px;
 	padding-right:10px;
 }
 
-li:hover {
+nav:hover {
 	background-color:#359;
 }
 
