@@ -124,7 +124,7 @@ li:hover {
 	text-align: left;
 	font-size: 32px;
 	font-style: bold;
-	line-height: 64px;
+	line-height: 33px;
 }
 
 #column_left {
@@ -143,5 +143,5 @@ li:hover {
 }
 
 #headshot {
-	
+	float:left;
 }
