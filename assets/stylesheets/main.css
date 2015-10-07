@@ -6,7 +6,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width:800px;
-	text-decoration: none;
 }
 
 h1 {
@@ -146,4 +145,5 @@ li:hover {
 
 #nav-link {
 	color:#ccc;
+	text-decoration: none;
 }
