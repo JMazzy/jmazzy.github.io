@@ -71,7 +71,7 @@ pre {
 }
 
 header {
-	background-color:##248;
+	background-color:#248;
 	color:#dde6e3;
 	text-align:center;
 	height:256px;
@@ -79,7 +79,7 @@ header {
 }
 
 nav {
-	background-color:#555;
+	background-color:#248;
 	color:#ccc;
 	font-size:24px;
 	line-height:32px;
@@ -99,7 +99,7 @@ section {
 }
 
 footer {
-	background-color:##248;
+	background-color:#248;
 	color:#ccc;
 	clear:both;
 	text-align:center;
@@ -119,7 +119,7 @@ li {
 }
 
 li:hover {
-	background-color:#1b3c77;
+	background-color:#359;
 }
 
 #page_title {
