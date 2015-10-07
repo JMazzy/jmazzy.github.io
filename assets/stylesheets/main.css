@@ -1,5 +1,9 @@
 @import url:("reset.css");
 
+html {
+	background-image:;
+}
+
 body {
 	background-color:#ccc;
 	font-family: 'Droid Sans', sans-serif;
@@ -77,7 +81,6 @@ header {
 	color:#dde6e3;
 	text-align:center;
 	height:256px;
-	padding:8px;
 }
 
 nav {
@@ -114,7 +117,6 @@ footer {
 	background-color:#248;
 	color:#ccc;
 	clear:both;
-	text-align:center;
 }
 
 #page_title {
