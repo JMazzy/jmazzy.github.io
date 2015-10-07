@@ -138,6 +138,7 @@ li:hover {
 #column_right {
 	width: 33%;
 	float:left;
+	margin-left:8px;
 }
 
 #headshot {
