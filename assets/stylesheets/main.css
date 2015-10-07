@@ -36,6 +36,11 @@ p {
 	line-height: 19px;
 }
 
+a {
+	font-style: normal;
+	font-variant: normal;
+}
+
 a:link {
 	color:#248;
 }
