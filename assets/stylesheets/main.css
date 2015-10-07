@@ -82,6 +82,7 @@ header {
 	text-align:center;
 	height:256px;
 	padding:8px;
+	width:auto;
 }
 
 nav {
@@ -119,6 +120,7 @@ footer {
 	color:#ccc;
 	clear:both;
 	padding:8px;
+	width:auto;
 }
 
 #page_title {
