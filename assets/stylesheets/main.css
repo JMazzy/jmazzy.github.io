@@ -38,11 +38,19 @@ p {
 }
 
 a:link {
-	color:#2c4d88;
+	color:#248;
 }
 
 a:visited {
-	color:#3d5e99;
+	color:#359;
+}
+
+a:active {
+	color:#843;
+}
+
+a:hover {
+
 }
 
 blockquote {
