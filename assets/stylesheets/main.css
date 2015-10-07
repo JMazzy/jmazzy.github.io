@@ -39,6 +39,7 @@ p {
 a {
 	font-style: normal;
 	font-variant: normal;
+	text-decoration:none;
 }
 
 a:link {
@@ -141,9 +142,4 @@ li:hover {
 
 #headshot {
 	float:left;
-}
-
-.nav-link {
-	color:#ccc;
-	text-decoration: none;
 }
