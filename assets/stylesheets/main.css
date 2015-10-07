@@ -90,6 +90,7 @@ nav {
 
 nav a:link {
 	color:#ccc;
+	width:33%;
 }
 
 nav a:hover {
