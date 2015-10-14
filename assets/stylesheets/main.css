@@ -1,12 +1,12 @@
 @import url:("reset.css");
 
 html {
-	background-color:#ccc;
+	background-color:#dde;
 	/*background-image: url("../images/river.jpg");*/
 }
 
 body {
-	background-color:#ccc;
+	background-color:#dde;
 	opacity:1.0;
 	font-family: 'Droid Sans', sans-serif;
 	margin-left: auto;
@@ -80,7 +80,7 @@ pre {
 
 header {
 	background-color:#248;
-	color:#dde6e3;
+	color:#dde;
 	text-align:center;
 	height:256px;
 	padding:8px;
@@ -89,7 +89,7 @@ header {
 
 nav {
 	background-color:#248;
-	color:#ccc;
+	color:#dde;
 	font-size:24px;
 	height: 32px;
 	line-height:32px;
@@ -100,7 +100,7 @@ nav {
 }
 
 nav a:link {
-	color:#ccc;
+	color:#dde;
 	padding:8px;
 	width:auto;
 }
@@ -113,13 +113,13 @@ section {
 
 	margin-left: auto;
 	margin-right: auto;
-	background-color:#ccc;
-	color:#222;
+	background-color:#dde;
+	color:#112;
 }
 
 footer {
 	background-color:#248;
-	color:#ccc;
+	color:#dde;
 	clear:both;
 	padding:8px;
 	width:auto;
@@ -144,6 +144,6 @@ footer {
 
 #headshot {
 	float:left;
-	background-color:#ccc;
+	background-color:#dde;
 	opacity:1.0;
 }
