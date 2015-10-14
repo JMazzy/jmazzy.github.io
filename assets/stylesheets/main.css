@@ -12,7 +12,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width:800px;
-	padding:8px;
+	padding:4px;
 }
 
 h1 {
@@ -21,6 +21,8 @@ h1 {
 	font-style: bold;
 	font-variant: bold;
 	line-height: 25px;
+	padding:8px;
+	float:right;
 }
 h2 {
 	font-family: 'Droid Sans Mono', sans-serif;
@@ -85,6 +87,10 @@ header {
 	height:256px;
 	padding:8px;
 	width:auto;
+	border-style:#46a;
+	border-width:1px;
+	border-radius: 8px;
+	margin-bottom:8px;
 }
 
 nav {
@@ -97,20 +103,31 @@ nav {
 	margin-right: auto;
 	padding:8px;
 	width:auto;
+	border-style:#46a;
+	border-width:1px;
+	border-radius: 8px;
+	margin-bottom:8px;
 }
 
 nav a:link {
 	color:#dde;
 	padding:8px;
 	width:auto;
+	border-radius:inherit;
+	padding:inherit;
 }
 
 nav a:hover {
 	background-color:#359;
+	border-radius: inherit;
+	padding:inherit;
+}
+
+article {
+	
 }
 
 section {
-
 	margin-left: auto;
 	margin-right: auto;
 	background-color:#dde;
@@ -123,6 +140,10 @@ footer {
 	clear:both;
 	padding:8px;
 	width:auto;
+	border-style:#46a;
+	border-width:1px;
+	border-radius: 8px;
+	margin-bottom:8px;
 }
 
 #page_title {
@@ -146,4 +167,5 @@ footer {
 	float:left;
 	background-color:#dde;
 	opacity:1.0;
+	border-radius:8px;
 }
