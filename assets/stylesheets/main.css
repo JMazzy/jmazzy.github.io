@@ -3,6 +3,7 @@
 html {
 	background-color:#dde;
 	/*background-image: url("../images/river.jpg");*/
+	background: white url(http://www.htmldog.com/images/bg.gif) no-repeat top right;
 }
 
 body {
@@ -17,11 +18,11 @@ body {
 
 h1 {
 	font-family: 'Droid Sans Mono', sans-serif;
-	font-size: 24px;
-	font-style: bold;
-	font-variant: bold;
-	line-height: 25px;
 	padding:8px;
+	text-align: left;
+	font-size: 32px;
+	font-style: bold;
+	line-height: 33px;
 	float:right;
 }
 h2 {
@@ -106,7 +107,6 @@ nav {
 	border-style:#46a;
 	border-width:1px;
 	border-radius: 8px;
-	margin-bottom:8px;
 }
 
 nav a:link {
@@ -117,6 +117,10 @@ nav a:link {
 	padding:inherit;
 }
 
+nav a:visited {
+	color:#dde;
+}
+
 nav a:hover {
 	background-color:#359;
 	border-radius: inherit;
@@ -124,7 +128,7 @@ nav a:hover {
 }
 
 article {
-	
+	padding:8px;
 }
 
 section {
@@ -143,24 +147,7 @@ footer {
 	border-style:#46a;
 	border-width:1px;
 	border-radius: 8px;
-	margin-bottom:8px;
-}
-
-#page_title {
-	text-align: left;
-	font-size: 32px;
-	font-style: bold;
-	line-height: 33px;
-}
-
-#column_left {
-	width: 60%;
-	float:left;
-}
-
-#column_right {
-	width: 30%;
-	float:right;
+	margin-top:8px;
 }
 
 #headshot {
