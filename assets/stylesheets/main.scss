@@ -1,0 +1,137 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Raleway:600|Inconsolata|Cabin);
+
+* {
+	background-color:#ccc;
+	color:#222;
+	font-family:'Cabin', helvetica, arial, sans-serif;
+	box-sizing:border-box;
+}
+
+html {
+	background-color:#ddd;
+}
+
+body, header, nav, footer {
+	border: 1px solid #222;
+	border-radius: 8px;
+	box-shadow: 0px 0px 2px 2px #444;
+}
+
+header, nav, footer {
+	background-color:#248;
+	color:#ddd;
+	text-align:center;
+}
+
+body {
+	background-color:#ccc;
+	margin-left: auto;
+	margin-right: auto;
+	width:960px;
+	padding:8px;
+}
+
+header {
+	height: 272px;
+	margin-bottom:8px;
+}
+
+nav {
+	height: 48px;
+
+	a {
+		font-size:24px;
+		line-height:32px;
+		background-color:inherit;
+		color:inherit;
+		margin:8px;
+		padding-left:8px;
+		padding-right:8px;
+		border-radius:inherit;
+		float:left;
+	}
+
+	a:visited {
+		color:#ddd;
+	}
+	
+	a:active {
+		color:#ddd;
+	}
+
+	a:hover {
+		background-color:#46a;
+	}
+}	
+
+section {
+	margin:8px;
+	padding:8px;
+}
+
+article {
+
+}
+
+article section {
+
+}
+
+h1 {
+	color:#ddd;
+	background-color:transparent;
+	font-family: 'Raleway', sans-serif;
+	margin:8px;
+	text-align: left;
+	font-size: 32px;
+	font-style: bold;
+	line-height: 33px;
+	float:right;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-style: bold;
+	font-variant: bold;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-style: bold;
+	font-variant: bold;
+}
+
+p {
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+a {
+	font-style: normal;
+	font-variant: normal;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#359;
+}
+
+a:active {
+	color:#843;
+}
+
+a:hover {
+	color:#46a;
+}
+
+#headshot {
+	float:left;
+	background-color:#ddd;
+	opacity:1.0;
+	border-radius:8px;
+	margin:8px;
+}
