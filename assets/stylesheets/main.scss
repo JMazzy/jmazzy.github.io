@@ -1,6 +1,9 @@
 @import url("reset.css");
 @import url(https://fonts.googleapis.com/css?family=Raleway:600|Inconsolata|Cabin);
 
+$base-font-size: 18px;
+$base-line-height: $base-font-size + 1px;
+
 * {
 	background-color:#ccc;
 	color:#222;
@@ -26,7 +29,7 @@ header, nav, footer {
 
 body {
 	background-color:#ccc;
-	margin: 8px auto 0 auto;
+	margin: 16px auto 0 auto;
 	width:960px;
 	padding:8px;
 }
@@ -40,8 +43,8 @@ nav {
 	height: 48px;
 
 	a {
-		font-size:24px;
-		line-height:32px;
+		font-size:1.5*$base-font-size;
+		line-height:1.5*$base-line-height;
 		background-color:inherit;
 		color:inherit;
 		margin:8px;
@@ -54,7 +57,7 @@ nav {
 	a:visited {
 		color:#ddd;
 	}
-	
+
 	a:active {
 		color:#ddd;
 	}
@@ -62,15 +65,14 @@ nav {
 	a:hover {
 		background-color:#46a;
 	}
-}	
+}
 
 section {
 	margin:8px;
-	padding:8px;
 }
 
 article {
-
+	margin:8px;
 }
 
 article section {
@@ -81,35 +83,41 @@ h1 {
 	color:#ddd;
 	background-color:transparent;
 	font-family: 'Raleway', sans-serif;
-	margin:8px;
-	text-align: left;
-	font-size: 32px;
+	font-size: 2*$base-font-size;
+	line-height: 2*$base-line-height;
 	font-style: bold;
-	line-height: 33px;
 	float:right;
+	margin:8px 8px 8px 0;
 }
 
 h2 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 22px;
+	font-size:1.5*$base-font-size;
+	line-height:1.5*$base-line-height;
 	font-style: bold;
 	font-variant: bold;
+	margin:8px 0 8px 0;
 }
 
 h3 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
+	font-size:1.25*$base-font-size;
+	line-height:1.25*$base-line-height;
 	font-style: bold;
 	font-variant: bold;
+	margin:8px 0 8px 0;
 }
 
 p {
-	font-size: 18px;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
 	font-style: normal;
 	font-variant: normal;
 }
 
 a {
+	font-size:$base-font-size;
+	line-height:$base-line-height;
 	font-style: normal;
 	font-variant: normal;
 	text-decoration:none;
