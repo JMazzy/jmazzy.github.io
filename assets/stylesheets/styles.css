@@ -1,0 +1,83 @@
+* {
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+.container {
+  padding: 20px; }
+
+.intro {
+  padding: 10px;
+  color: #DEDBA7;
+  font-size: 24px; }
+
+.name {
+  font-weight: bold;
+  font-size: 64px; }
+
+.tagline {
+  font-size: 32px; }
+
+.circle {
+  width: 300px;
+  height: 300px;
+  color: #1A202C;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  font-size: 20px;
+  transition: width 0.5s linear;
+  /* vendorless fallback */
+  -o-transition: width 0.5s linear;
+  /* opera */
+  -ms-transition: width 0.5s linear;
+  /* IE 10 */
+  -moz-transition: width 0.5s linear;
+  /* Firefox */
+  -webkit-transition: width 0.5s linear;
+  /*safari and chrome */ }
+
+.circle:hover {
+  box-shadow: 0 0 10px #DEDBA7;
+  width: 600px;
+  transition: width 0.5s linear;
+  /* vendorless fallback */
+  -o-transition: width 0.5s linear;
+  /* opera */
+  -ms-transition: width 0.5s linear;
+  /* IE 10 */
+  -moz-transition: width 0.5s linear;
+  /* Firefox */
+  -webkit-transition: width 0.5s linear;
+  /*safari and chrome */ }
+
+.circle-headline {
+  font-weight: bold;
+  font-size: 24px; }
+
+.dark-base {
+  background-color: #1A202C; }
+
+.dark-cool {
+  background-color: #1F7872; }
+
+.light-cool {
+  background-color: #72B095; }
+
+.light-warm {
+  background-color: #DEDBA7; }
+
+.dark-warm {
+  background-color: #D13F31; }
+
+.headshot {
+  background-image: url("../images/josh.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 300px; }
+
+.footer {
+  color: #DEDBA7; }
+
+/*# sourceMappingURL=styles.css.map */

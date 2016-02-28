@@ -1,0 +1,103 @@
+
+* {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+$radius: 150px;
+$color-dark-base: #1A202C;
+$color-dark-cool: #1F7872;
+$color-light-cool: #72B095;
+$color-light-warm: #DEDBA7;
+$color-dark-warm: #D13F31;
+
+$color-dark-text: #1A202C;
+$color-light-text: #DEDBA7;
+
+.container {
+	padding: 20px;
+}
+
+.intro {
+	padding: 10px;
+	color: $color-light-text;
+	font-size: 24px;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 64px;
+}
+
+.tagline {
+	font-size: 32px;
+}
+
+.circle {
+	width: $radius * 2;
+	height: $radius * 2;
+	color: $color-dark-text;
+
+	vertical-align: middle;
+	text-align: center;
+
+	padding: 20px;
+
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+
+	font-size: 20px;
+
+	transition: width 0.5s linear; /* vendorless fallback */
+    -o-transition: width 0.5s linear; /* opera */
+    -ms-transition: width 0.5s linear; /* IE 10 */
+    -moz-transition: width 0.5s linear; /* Firefox */
+    -webkit-transition: width 0.5s linear; /*safari and chrome */
+}
+
+.circle:hover {
+	box-shadow: 0 0 10px $color-light-warm;
+	width: $radius * 4;
+
+	transition: width 0.5s linear; /* vendorless fallback */
+		-o-transition: width 0.5s linear; /* opera */
+		-ms-transition: width 0.5s linear; /* IE 10 */
+		-moz-transition: width 0.5s linear; /* Firefox */
+		-webkit-transition: width 0.5s linear; /*safari and chrome */
+}
+
+.circle-headline {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.dark-base {
+	background-color: $color-dark-base;
+}
+
+.dark-cool {
+	background-color: $color-dark-cool;
+}
+
+.light-cool {
+	background-color: $color-light-cool;
+}
+
+.light-warm {
+	background-color: $color-light-warm;
+}
+
+.dark-warm {
+	background-color: $color-dark-warm;
+}
+
+.headshot {
+	background-image: url("../images/josh.png");
+	background-repeat: no-repeat;
+  background-position: center;
+	background-size: auto ($radius * 2);
+}
+
+.footer {
+	color: $color-light-text;
+}
