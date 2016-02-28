@@ -1,18 +1,16 @@
-
-* {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 16px;
-}
-
 $radius: 150px;
 $color-dark-base: #1A202C;
 $color-dark-cool: #1F7872;
 $color-light-cool: #72B095;
 $color-light-warm: #DEDBA7;
 $color-dark-warm: #D13F31;
-
 $color-dark-text: #1A202C;
 $color-light-text: #DEDBA7;
+
+* {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+}
 
 .container {
 	padding: 20px;
@@ -92,6 +90,14 @@ $color-light-text: #DEDBA7;
 	background-color: $color-dark-warm;
 }
 
+.dark-text {
+	color: $color-dark-text;
+}
+
+.light-text {
+	color: $color-light-text;
+}
+
 .headshot {
 	background-image: url("../images/josh.png");
 	background-repeat: no-repeat;
@@ -100,5 +106,11 @@ $color-light-text: #DEDBA7;
 }
 
 .footer {
+	padding: 20px;
 	color: $color-light-text;
+}
+
+.text-box {
+	padding: 20px;
+	border-radius: 20px;
 }

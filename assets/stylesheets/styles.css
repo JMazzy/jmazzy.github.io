@@ -1,6 +1,6 @@
 * {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 16px; }
+  font-size: 20px; }
 
 .container {
   padding: 20px; }
@@ -72,6 +72,12 @@
 .dark-warm {
   background-color: #D13F31; }
 
+.dark-text {
+  color: #1A202C; }
+
+.light-text {
+  color: #DEDBA7; }
+
 .headshot {
   background-image: url("../images/josh.png");
   background-repeat: no-repeat;
@@ -79,6 +85,11 @@
   background-size: auto 300px; }
 
 .footer {
+  padding: 20px;
   color: #DEDBA7; }
+
+.text-box {
+  padding: 20px;
+  border-radius: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
