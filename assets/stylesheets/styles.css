@@ -1,5 +1,5 @@
 * {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 20px; }
 
 .container {
@@ -7,7 +7,7 @@
 
 .intro {
   padding: 10px;
-  color: #DEDBA7;
+  color: #011f4b;
   font-size: 24px; }
 
 .name {
@@ -17,66 +17,30 @@
 .tagline {
   font-size: 32px; }
 
-.circle {
+.bubble {
+  box-shadow: 0 0 10px #03396c;
   width: 300px;
   height: 300px;
-  color: #1A202C;
+  background-color: #6497b1;
+  color: #011f4b;
   vertical-align: middle;
   text-align: center;
   padding: 20px;
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
   border-radius: 150px;
-  font-size: 20px;
-  transition: width 0.5s linear;
-  /* vendorless fallback */
-  -o-transition: width 0.5s linear;
-  /* opera */
-  -ms-transition: width 0.5s linear;
-  /* IE 10 */
-  -moz-transition: width 0.5s linear;
-  /* Firefox */
-  -webkit-transition: width 0.5s linear;
-  /*safari and chrome */ }
+  font-size: 20px; }
 
-.circle:hover {
-  box-shadow: 0 0 10px #DEDBA7;
-  width: 600px;
-  transition: width 0.5s linear;
-  /* vendorless fallback */
-  -o-transition: width 0.5s linear;
-  /* opera */
-  -ms-transition: width 0.5s linear;
-  /* IE 10 */
-  -moz-transition: width 0.5s linear;
-  /* Firefox */
-  -webkit-transition: width 0.5s linear;
-  /*safari and chrome */ }
+.bubble:hover {
+  box-shadow: 0 0 20px #03396c; }
 
-.circle-headline {
+.bubble-headline {
   font-weight: bold;
   font-size: 24px; }
 
-.dark-base {
-  background-color: #1A202C; }
-
-.dark-cool {
-  background-color: #1F7872; }
-
-.light-cool {
-  background-color: #72B095; }
-
-.light-warm {
-  background-color: #DEDBA7; }
-
-.dark-warm {
-  background-color: #D13F31; }
-
-.dark-text {
-  color: #1A202C; }
-
-.light-text {
-  color: #DEDBA7; }
+.base {
+  background-color: #ddddee;
+  color: #011f4b; }
 
 .headshot {
   background-image: url("../images/josh.png");
@@ -85,11 +49,23 @@
   background-size: auto 300px; }
 
 .footer {
-  padding: 20px;
-  color: #DEDBA7; }
+  padding: 20px; }
 
 .text-box {
   padding: 20px;
   border-radius: 20px; }
+
+.nav-bubble {
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px 0;
+  height: 100px;
+  border-radius: 50px; }
+
+.nav {
+  padding: 20px; }
+
+.row {
+  padding: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
