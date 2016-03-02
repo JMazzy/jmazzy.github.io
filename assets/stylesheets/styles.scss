@@ -1,24 +1,22 @@
-$radius: 150px;
-$color-dark-base: #1A202C;
-$color-dark-cool: #1F7872;
-$color-light-cool: #72B095;
-$color-light-warm: #DEDBA7;
-$color-dark-warm: #D13F31;
-$color-dark-text: #1A202C;
-$color-light-text: #DEDBA7;
+$dark-text: #222222;
+$light-text: #E0E9E9;
+$headline: #444444;
+$bubble: #455372;
+$shadow: #2D3956;
 
 * {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 }
 
 .container {
 	padding: 20px;
+	color: $dark-text;
 }
 
 .intro {
 	padding: 10px;
-	color: $color-light-text;
+	color: $headline;
 	font-size: 24px;
 }
 
@@ -31,86 +29,17 @@ $color-light-text: #DEDBA7;
 	font-size: 32px;
 }
 
-.circle {
-	width: $radius * 2;
-	height: $radius * 2;
-	color: $color-dark-text;
-
-	vertical-align: middle;
-	text-align: center;
-
+.header {
 	padding: 20px;
-
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
-	border-radius: $radius;
-
-	font-size: 20px;
-
-	transition: width 0.5s linear; /* vendorless fallback */
-    -o-transition: width 0.5s linear; /* opera */
-    -ms-transition: width 0.5s linear; /* IE 10 */
-    -moz-transition: width 0.5s linear; /* Firefox */
-    -webkit-transition: width 0.5s linear; /*safari and chrome */
-}
-
-.circle:hover {
-	box-shadow: 0 0 10px $color-light-warm;
-	width: $radius * 4;
-
-	transition: width 0.5s linear; /* vendorless fallback */
-		-o-transition: width 0.5s linear; /* opera */
-		-ms-transition: width 0.5s linear; /* IE 10 */
-		-moz-transition: width 0.5s linear; /* Firefox */
-		-webkit-transition: width 0.5s linear; /*safari and chrome */
-}
-
-.circle-headline {
-	font-weight: bold;
-	font-size: 24px;
-}
-
-.dark-base {
-	background-color: $color-dark-base;
-}
-
-.dark-cool {
-	background-color: $color-dark-cool;
-}
-
-.light-cool {
-	background-color: $color-light-cool;
-}
-
-.light-warm {
-	background-color: $color-light-warm;
-}
-
-.dark-warm {
-	background-color: $color-dark-warm;
-}
-
-.dark-text {
-	color: $color-dark-text;
-}
-
-.light-text {
-	color: $color-light-text;
-}
-
-.headshot {
-	background-image: url("../images/josh.png");
-	background-repeat: no-repeat;
-  background-position: center;
-	background-size: auto ($radius * 2);
+	color: $light-text;
+	background-color: $bubble;
+	border-radius: 32px;
 }
 
 .footer {
 	padding: 20px;
-	color: $color-light-text;
-}
-
-.text-box {
-	padding: 20px;
-	border-radius: 20px;
+	color: $light-text;
+	background-color: $bubble;
+	height: 64px;
+	border-radius: 32px;
 }

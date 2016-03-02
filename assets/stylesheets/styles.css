@@ -1,13 +1,14 @@
 * {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px; }
 
 .container {
-  padding: 20px; }
+  padding: 20px;
+  color: #222222; }
 
 .intro {
   padding: 10px;
-  color: #DEDBA7;
+  color: #444444;
   font-size: 24px; }
 
 .name {
@@ -17,79 +18,17 @@
 .tagline {
   font-size: 32px; }
 
-.circle {
-  width: 300px;
-  height: 300px;
-  color: #1A202C;
-  vertical-align: middle;
-  text-align: center;
+.header {
   padding: 20px;
-  -moz-border-radius: 150px;
-  -webkit-border-radius: 150px;
-  border-radius: 150px;
-  font-size: 20px;
-  transition: width 0.5s linear;
-  /* vendorless fallback */
-  -o-transition: width 0.5s linear;
-  /* opera */
-  -ms-transition: width 0.5s linear;
-  /* IE 10 */
-  -moz-transition: width 0.5s linear;
-  /* Firefox */
-  -webkit-transition: width 0.5s linear;
-  /*safari and chrome */ }
-
-.circle:hover {
-  box-shadow: 0 0 10px #DEDBA7;
-  width: 600px;
-  transition: width 0.5s linear;
-  /* vendorless fallback */
-  -o-transition: width 0.5s linear;
-  /* opera */
-  -ms-transition: width 0.5s linear;
-  /* IE 10 */
-  -moz-transition: width 0.5s linear;
-  /* Firefox */
-  -webkit-transition: width 0.5s linear;
-  /*safari and chrome */ }
-
-.circle-headline {
-  font-weight: bold;
-  font-size: 24px; }
-
-.dark-base {
-  background-color: #1A202C; }
-
-.dark-cool {
-  background-color: #1F7872; }
-
-.light-cool {
-  background-color: #72B095; }
-
-.light-warm {
-  background-color: #DEDBA7; }
-
-.dark-warm {
-  background-color: #D13F31; }
-
-.dark-text {
-  color: #1A202C; }
-
-.light-text {
-  color: #DEDBA7; }
-
-.headshot {
-  background-image: url("../images/josh.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 300px; }
+  color: #E0E9E9;
+  background-color: #455372;
+  border-radius: 32px; }
 
 .footer {
   padding: 20px;
-  color: #DEDBA7; }
-
-.text-box {
-  padding: 20px;
-  border-radius: 20px; }
+  color: #E0E9E9;
+  background-color: #455372;
+  height: 64px;
+  border-radius: 32px; }
 
 /*# sourceMappingURL=styles.css.map */
