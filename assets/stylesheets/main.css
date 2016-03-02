@@ -1,0 +1,113 @@
+@import url("normalize.css");
+@import url(https://fonts.googleapis.com/css?family=Raleway:600|Cabin);
+* {
+  background-color: #ccc;
+  color: #222;
+  font-family: "Cabin", helvetica, arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  background-color: #ddd; }
+
+body, header, nav, footer {
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px #222;
+  padding: 10px; }
+
+header, nav, footer {
+  background-color: #248;
+  color: #ddd; }
+
+main {
+  padding: 10px; }
+
+body {
+  background-color: #ccc;
+  width: 960px;
+  margin: 10px auto; }
+
+footer {
+  text-align: center; }
+
+nav {
+  margin: 10px 0;
+  padding: 0 10px; }
+  nav a {
+    font-size: 28.8px;
+    line-height: 29.8px;
+    background-color: inherit;
+    color: inherit;
+    border-radius: inherit;
+    display: inline-block;
+    margin: 0;
+    padding: 10px; }
+  nav a:visited {
+    color: #ddd; }
+  nav a:active {
+    color: #ddd; }
+  nav a:hover {
+    background-color: #359;
+    box-shadow: inherit;
+    border: inherit; }
+
+.main-text {
+  width: 675px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px; }
+
+.sidebar {
+  width: 216px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px; }
+
+h1 {
+  color: #ddd;
+  background-color: transparent;
+  font-family: "Raleway", helvetica, arial, sans-serif;
+  font-size: 36px;
+  line-height: 37px;
+  display: block;
+  margin: 10px;
+  padding: 10px; }
+
+h2 {
+  font-family: "Raleway", helvetica, arial, sans-serif;
+  font-size: 32.4px;
+  line-height: 36px; }
+
+h3 {
+  font-family: "Raleway", helvetica, arial, sans-serif;
+  font-size: 28.8px;
+  line-height: 32.4px; }
+
+p {
+  font-size: 18px;
+  line-height: 25.2px; }
+
+a {
+  font-size: 18px;
+  line-height: 19px;
+  font-style: normal;
+  font-variant: normal;
+  text-decoration: none; }
+
+a:visited {
+  color: #359; }
+
+a:active {
+  color: #843; }
+
+a:hover {
+  color: #46a; }
+
+#headshot {
+  background-color: #ddd;
+  opacity: 1.0;
+  border-radius: 10px;
+  display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */
