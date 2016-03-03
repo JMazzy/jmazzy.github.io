@@ -17,6 +17,9 @@
 .tagline {
   font-size: 32px; }
 
+.spacer-row {
+  height: 150px; }
+
 .circle {
   box-shadow: 0 0 10px #2D3956;
   width: 300px;
@@ -44,7 +47,7 @@
 
 .circle:hover {
   box-shadow: 0 0 20px #2D3956;
-  width: 600px;
+  width: 450px;
   transition: width 0.5s linear;
   /* vendorless fallback */
   -o-transition: width 0.5s linear;

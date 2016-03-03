@@ -29,6 +29,10 @@ $shadow: #2D3956;
 	font-size: 32px;
 }
 
+.spacer-row {
+	height: $radius;
+}
+
 .circle {
 	box-shadow: 0 0 10px $shadow;
 	width: $radius * 2;
@@ -57,7 +61,7 @@ $shadow: #2D3956;
 
 .circle:hover {
 	box-shadow: 0 0 20px $shadow;
-	width: $radius * 4;
+	width: $radius * 3;
 
 	transition: width 0.5s linear; /* vendorless fallback */
 		-o-transition: width 0.5s linear; /* opera */
