@@ -70,9 +70,19 @@
   background-position: center;
   background-size: auto 300px; }
 
+.header {
+  padding: 20px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: #455372;
+  color: #E0E9E9; }
+
 .footer {
   padding: 20px;
-  color: #222222; }
+  height: 64px;
+  border-radius: 32px;
+  background-color: #455372;
+  color: #E0E9E9; }
 
 .text-box {
   padding: 20px;
