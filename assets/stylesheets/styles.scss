@@ -83,9 +83,20 @@ $shadow: #2D3956;
 	background-size: auto ($radius * 2);
 }
 
+.header {
+	padding: 20px;
+	height: 64px;
+	border-radius: 32px;
+	background-color: $bubble;
+	color: $light-text;
+}
+
 .footer {
 	padding: 20px;
-	color: $dark-text;
+	height: 64px;
+	border-radius: 32px;
+	background-color: $bubble;
+	color: $light-text;
 }
 
 .text-box {
