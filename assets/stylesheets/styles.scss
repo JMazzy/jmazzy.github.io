@@ -18,6 +18,7 @@ $shadow: #2D3956;
 	padding: 10px;
 	color: $headline;
 	font-size: 24px;
+	height: $radius * 1.5;
 }
 
 .name {
@@ -44,7 +45,7 @@ $shadow: #2D3956;
 	vertical-align: middle;
 	text-align: center;
 
-	padding: 20px;
+	padding: 25px 25px 25px 25px;
 
 	-moz-border-radius: $radius;
 	-webkit-border-radius: $radius;
@@ -61,7 +62,7 @@ $shadow: #2D3956;
 
 .circle:hover {
 	box-shadow: 0 0 20px $shadow;
-	width: $radius * 3;
+	width: $radius * 4;
 
 	transition: width 0.5s linear; /* vendorless fallback */
 		-o-transition: width 0.5s linear; /* opera */

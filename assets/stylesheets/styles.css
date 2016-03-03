@@ -8,7 +8,8 @@
 .intro {
   padding: 10px;
   color: #444444;
-  font-size: 24px; }
+  font-size: 24px;
+  height: 225px; }
 
 .name {
   font-weight: bold;
@@ -29,7 +30,7 @@
   background-color: #455372;
   vertical-align: middle;
   text-align: center;
-  padding: 20px;
+  padding: 25px 25px 25px 25px;
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
   border-radius: 150px;
@@ -47,7 +48,7 @@
 
 .circle:hover {
   box-shadow: 0 0 20px #2D3956;
-  width: 450px;
+  width: 600px;
   transition: width 0.5s linear;
   /* vendorless fallback */
   -o-transition: width 0.5s linear;
