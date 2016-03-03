@@ -3,8 +3,7 @@
   font-size: 20px; }
 
 .container {
-  padding: 20px;
-  color: #222222; }
+  padding: 20px; }
 
 .intro {
   padding: 10px;
@@ -18,17 +17,61 @@
 .tagline {
   font-size: 32px; }
 
-.header {
-  padding: 20px;
+.circle {
+  box-shadow: 0 0 10px #2D3956;
+  width: 300px;
+  height: 300px;
   color: #E0E9E9;
+  text-shadow: 2px 2px 2px #222222;
   background-color: #455372;
-  border-radius: 32px; }
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  font-size: 20px;
+  transition: width 0.5s linear;
+  /* vendorless fallback */
+  -o-transition: width 0.5s linear;
+  /* opera */
+  -ms-transition: width 0.5s linear;
+  /* IE 10 */
+  -moz-transition: width 0.5s linear;
+  /* Firefox */
+  -webkit-transition: width 0.5s linear;
+  /*safari and chrome */ }
+
+.circle:hover {
+  box-shadow: 0 0 20px #2D3956;
+  width: 600px;
+  transition: width 0.5s linear;
+  /* vendorless fallback */
+  -o-transition: width 0.5s linear;
+  /* opera */
+  -ms-transition: width 0.5s linear;
+  /* IE 10 */
+  -moz-transition: width 0.5s linear;
+  /* Firefox */
+  -webkit-transition: width 0.5s linear;
+  /*safari and chrome */ }
+
+.circle-headline {
+  font-weight: bold;
+  font-size: 24px; }
+
+.headshot {
+  background-image: url("../images/josh.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 300px; }
 
 .footer {
   padding: 20px;
-  color: #E0E9E9;
-  background-color: #455372;
-  height: 64px;
-  border-radius: 32px; }
+  color: #222222; }
+
+.text-box {
+  padding: 20px;
+  border-radius: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

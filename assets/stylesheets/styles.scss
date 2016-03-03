@@ -1,3 +1,4 @@
+$radius: 150px;
 $dark-text: #222222;
 $light-text: #E0E9E9;
 $headline: #444444;
@@ -11,7 +12,6 @@ $shadow: #2D3956;
 
 .container {
 	padding: 20px;
-	color: $dark-text;
 }
 
 .intro {
@@ -29,17 +29,61 @@ $shadow: #2D3956;
 	font-size: 32px;
 }
 
-.header {
-	padding: 20px;
+.circle {
+	box-shadow: 0 0 10px $shadow;
+	width: $radius * 2;
+	height: $radius * 2;
 	color: $light-text;
+	text-shadow: 2px 2px 2px $dark-text;
 	background-color: $bubble;
-	border-radius: 32px;
+
+	vertical-align: middle;
+	text-align: center;
+
+	padding: 20px;
+
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+
+	font-size: 20px;
+
+	transition: width 0.5s linear; /* vendorless fallback */
+    -o-transition: width 0.5s linear; /* opera */
+    -ms-transition: width 0.5s linear; /* IE 10 */
+    -moz-transition: width 0.5s linear; /* Firefox */
+    -webkit-transition: width 0.5s linear; /*safari and chrome */
+}
+
+.circle:hover {
+	box-shadow: 0 0 20px $shadow;
+	width: $radius * 4;
+
+	transition: width 0.5s linear; /* vendorless fallback */
+		-o-transition: width 0.5s linear; /* opera */
+		-ms-transition: width 0.5s linear; /* IE 10 */
+		-moz-transition: width 0.5s linear; /* Firefox */
+		-webkit-transition: width 0.5s linear; /*safari and chrome */
+}
+
+.circle-headline {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.headshot {
+	background-image: url("../images/josh.png");
+	background-repeat: no-repeat;
+  background-position: center;
+	background-size: auto ($radius * 2);
 }
 
 .footer {
 	padding: 20px;
-	color: $light-text;
-	background-color: $bubble;
-	height: 64px;
-	border-radius: 32px;
+	color: $dark-text;
+}
+
+.text-box {
+	padding: 20px;
+	border-radius: 20px;
 }
