@@ -88,6 +88,8 @@ $shadow: #2D3956;
 	border-radius: 32px;
 	background-color: $bubble;
 	color: $light-text;
+	box-shadow: 0 0 10px $shadow;
+	text-shadow: 2px 2px 2px $dark-text;
 }
 
 .footer {
@@ -96,6 +98,8 @@ $shadow: #2D3956;
 	border-radius: 32px;
 	background-color: $bubble;
 	color: $light-text;
+	box-shadow: 0 0 10px $shadow;
+	text-shadow: 2px 2px 2px $dark-text;
 }
 
 .light-footer {

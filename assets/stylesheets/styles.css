@@ -74,14 +74,18 @@
   padding: 20px;
   border-radius: 32px;
   background-color: #455372;
-  color: #E0E9E9; }
+  color: #E0E9E9;
+  box-shadow: 0 0 10px #2D3956;
+  text-shadow: 2px 2px 2px #222222; }
 
 .footer {
   padding: 20px;
   height: 64px;
   border-radius: 32px;
   background-color: #455372;
-  color: #E0E9E9; }
+  color: #E0E9E9;
+  box-shadow: 0 0 10px #2D3956;
+  text-shadow: 2px 2px 2px #222222; }
 
 .light-footer {
   padding: 20px;
