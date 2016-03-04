@@ -1,6 +1,7 @@
 * {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #222222; }
 
 h1, h2, h3 {
   font-weight: bold;
@@ -11,9 +12,11 @@ h1, h2, h3 {
 
 .intro {
   padding: 10px;
-  color: #777777;
   font-size: 24px;
   height: 225px; }
+  .intro h1, .intro h2, .intro h3 {
+    font-weight: bold;
+    color: #222222; }
 
 .name {
   font-weight: bold;
