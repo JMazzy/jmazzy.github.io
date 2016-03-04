@@ -9,6 +9,9 @@ h1, h2, h3 {
 .container {
   padding: 20px; }
 
+article {
+  padding-bottom: 10px; }
+
 .intro {
   padding: 10px;
   font-size: 24px;
