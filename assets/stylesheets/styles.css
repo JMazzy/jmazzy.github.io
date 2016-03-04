@@ -2,7 +2,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 20px; }
 
-h3 {
+h1, h2, h3, h4 {
   font-weight: bold;
   color: #444444; }
 
@@ -17,10 +17,12 @@ h3 {
 
 .name {
   font-weight: bold;
-  font-size: 64px; }
+  font-size: 64px;
+  color: #E0E9E9; }
 
 .tagline {
-  font-size: 32px; }
+  font-size: 32px;
+  color: #E0E9E9; }
 
 .spacer-row {
   height: 150px; }
