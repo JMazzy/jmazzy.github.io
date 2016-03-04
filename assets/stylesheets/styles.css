@@ -34,8 +34,6 @@ article {
 
 .circle {
   box-shadow: 0 0 10px #2D3956;
-  width: 300px;
-  height: 300px;
   color: #E0E9E9;
   text-shadow: 2px 2px 2px #111;
   background-color: #455372;
@@ -46,33 +44,14 @@ article {
   -webkit-border-radius: 150px;
   border-radius: 150px;
   font-size: 20px;
-  transition: width 0.5s linear;
-  /* vendorless fallback */
-  -o-transition: width 0.5s linear;
-  /* opera */
-  -ms-transition: width 0.5s linear;
-  /* IE 10 */
-  -moz-transition: width 0.5s linear;
-  /* Firefox */
-  -webkit-transition: width 0.5s linear;
-  /*safari and chrome */ }
+  width: 300px;
+  height: 300px; }
   .circle h1, .circle h2, .circle h3 {
     font-weight: bold;
     color: #E0E9E9; }
 
 .circle:hover {
-  box-shadow: 0 0 20px #2D3956;
-  width: 600px;
-  transition: width 0.5s linear;
-  /* vendorless fallback */
-  -o-transition: width 0.5s linear;
-  /* opera */
-  -ms-transition: width 0.5s linear;
-  /* IE 10 */
-  -moz-transition: width 0.5s linear;
-  /* Firefox */
-  -webkit-transition: width 0.5s linear;
-  /*safari and chrome */ }
+  box-shadow: 0 0 20px #2D3956; }
 
 .circle-headline {
   font-weight: bold;
