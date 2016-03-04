@@ -65,6 +65,11 @@ h1, h2, h3 {
     -ms-transition: width 0.5s linear; /* IE 10 */
     -moz-transition: width 0.5s linear; /* Firefox */
     -webkit-transition: width 0.5s linear; /*safari and chrome */
+
+	h1, h2, h3 {
+		font-weight: bold;
+		color: $light-text;
+	}
 }
 
 .circle:hover {
