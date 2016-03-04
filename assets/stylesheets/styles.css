@@ -4,14 +4,14 @@
 
 h1, h2, h3, h4 {
   font-weight: bold;
-  color: #444444; }
+  color: #777777; }
 
 .container {
   padding: 20px; }
 
 .intro {
   padding: 10px;
-  color: #444444;
+  color: #777777;
   font-size: 24px;
   height: 225px; }
 
