@@ -89,7 +89,7 @@
   width: 22px;
   border-radius: 11px;
   font-family: 'Arial', sans-serif;
-  line-height: 22px;
+  line-height: 21px;
   font-weight: bold;
   font-size: 14px;
   text-align: center;
@@ -98,8 +98,7 @@
   left: 20px;
   top: 7px;
   z-index: 3;
-  margin: 0;
-  padding-bottom: 4px; }
+  margin: 0; }
 
 .hidden {
   display: none; }
