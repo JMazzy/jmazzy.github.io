@@ -1,0 +1,104 @@
+.grid {
+  position: relative; }
+
+.reset {
+  background-color: #6da446; }
+
+.grid-holder {
+  padding: 50px; }
+
+.hexagon {
+  position: absolute;
+  width: 64px;
+  height: 36.95px;
+  background-color: #3a9b9f;
+  margin: 18.48px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); }
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 45.25px;
+  height: 45.25px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 9.3726px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); }
+
+.hexagon:before {
+  top: -22.6274px; }
+
+.hexagon:after {
+  bottom: -22.6274px; }
+
+/*cover up extra shadows*/
+.hexagon span {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 64px;
+  height: 36.9504px;
+  z-index: 2;
+  background: inherit; }
+
+.water {
+  background-color: #009fdf;
+  border-color: #009fdf; }
+
+.desert {
+  background-color: #d9b672;
+  border-color: #d9b672; }
+
+.neutral {
+  background-color: #F4DF95;
+  border-color: #F4DF95; }
+
+.gold {
+  background-color: #b6a142;
+  border-color: #b6a142; }
+
+.ore {
+  background-color: #656570;
+  border-color: #656570; }
+
+.brick {
+  background-color: #b46732;
+  border-color: #b46732; }
+
+.sheep {
+  background-color: #6da446;
+  border-color: #6da446; }
+
+.wheat {
+  background-color: #f9c246;
+  border-color: #f9c246; }
+
+.wood {
+  background-color: #2b4e1b;
+  border-color: #2b4e1b; }
+
+.number {
+  background-color: #F4DF95;
+  border: 2px solid black;
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  font-family: sans-serif;
+  line-height: 22px;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  left: 20px;
+  top: -7px;
+  z-index: 3; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=hex_map.css.map */

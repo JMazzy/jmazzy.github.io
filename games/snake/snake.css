@@ -1,0 +1,35 @@
+.square {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.row {
+  height: 25px;
+}
+
+.food {
+  background-color: #D6B16A;
+  border-radius: 13px;
+}
+
+.snake {
+  /*background-color: #13A69C;*/
+  background-image: url("logo_ship_90.png");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+}
+
+.board {
+  border: 2px solid grey;
+  background-color: #00618C;
+}
+
+.hidden {
+  display: none;
+}
+
+.loss-message {
+  text-align: center;
+}
