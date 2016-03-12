@@ -1,12 +1,12 @@
 .square {
-  height: 25px;
-  width: 25px;
+  height: 48px;
+  width: 48px;
   display: inline-block;
   border-radius: 5px;
 }
 
 .row {
-  height: 25px;
+  height: 48px;
 }
 
 .food {
@@ -17,7 +17,7 @@
 .snake {
   /*background-color: #13A69C;*/
   background-image: url("logo_ship_90.png");
-  background-size: 25px 25px;
+  background-size: 48px 48px;
   background-repeat: no-repeat;
 }
 

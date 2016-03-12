@@ -1,8 +1,8 @@
 var model = {
 
   init: function(){
-    this.boardWidth = 50;
-    this.boardHeight = 25;
+    this.boardWidth = 24;
+    this.boardHeight = 12;
     this.score = 0;
     this.snake = new Snake( this.randomLocation(),
                             this.randomDirection() );
