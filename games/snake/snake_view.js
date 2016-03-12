@@ -11,7 +11,7 @@ var view = {
     this.boardHeight = boardHeight;
     this.boardWidth = boardWidth;
     for ( var row = 0; row < boardHeight; row++ ) {
-      $(".board").append( $("<div class='row' id='row-" + row + "'></div>") );
+      $(".board").append( $("<div class='grid-row' id='row-" + row + "'></div>") );
       for ( var col = 0; col < boardWidth; col++ ) {
         $("#row-" + row).append( $("<div class='col square' id='col-" + col + "'></div>") )
       }
