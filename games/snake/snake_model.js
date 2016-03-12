@@ -45,13 +45,13 @@ var model = {
   checkLoss: function() {
     for ( var seg = 1; seg < this.snake.segments.length; seg++) {
       if ( this.bitingSelf(seg) ) {
-        view.displayLossMessage( "You lost because you bit yourself!", this.score);
+        view.displayLossMessage( "You lost because you crashed into yourself!", this.score);
         this.playing = false;
       }
     }
 
     if ( this.bitingWall() ) {
-      view.displayLossMessage( "You lost because you ran into the wall!", this.score);
+      view.displayLossMessage( "You lost because you sailed off the map!", this.score);
       this.playing = false;
     }
   },
