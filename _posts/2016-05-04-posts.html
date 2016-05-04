@@ -6,7 +6,7 @@ categories: page posts
 permalink: /posts/
 ---
 
-{% for post in site.posts %}
+{% for post in site.posts | sort: 'date', 'last' %}
 	<p>
 		<a href="{{ post.url }}">{{ post.title }}</a>
 	</p>
