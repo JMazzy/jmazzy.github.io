@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>What the *bleep* is a heap? - exported from Medium</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 18px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      </style></head><body><article>
+<header>
+<h1>What the *bleep* is a heap?</h1>
+</header>
+<section data-field="subtitle">
+Down the rabbit hole
+</section>
+<section data-field="body">
+<section name="c401" class=" section--body section--first section--last"><div class="section-divider layoutSingleColumn"><hr class="section-divider"></div><div class="section-content"><div class="section-inner layoutSingleColumn"><h3 name="c499" id="c499" class="graf--h3 graf--first">What the *bleep* is a heap?</h3><h4 name="64ee" id="64ee" class="graf--h4 graf-after--h3">Down the rabbit hole</h4><p name="cc18" id="cc18" class="graf--p graf-after--h4">I was searching for an algorithm that was interesting yet simple enough to explain in depth in 15 minutes, and I came across A*. I quickly found that while it is very interesting, preparing to explain it briefly was not going to happen this weekend. A* is an algorithm for finding the shortest path between two vertices in a grid, often used in video games for path-finding. However, this rabbit hole led me to other interesting things.</p><p name="63a9" id="63a9" class="graf--p graf-after--p">One critical piece to implementing A* is a priority queue. A priority queue is similar to a normal queue, except instead of first-in-first-out, it is first-in-best-out. In other words, it gives priority to items based on some criteria and spits the highest priority ones out first.</p><p name="e1e7" id="e1e7" class="graf--p graf-after--p">A priority queue is usually implemented using a heap. I had heard of heaps before, but never actually implemented one so that seemed like a natural direction to pursue. That’s how I came to ask, “what the *bleep* is a heap?”</p><h4 name="2072" id="2072" class="graf--h4 graf-after--p">The heap explained</h4><p name="c926" id="c926" class="graf--p graf-after--h4">Turns out, a heap is a data structure that keeps the smallest value (for a min-heap) or the largest value (for a max-heap) in the root of a tree (usually a binary tree).</p><p name="ebd8" id="ebd8" class="graf--p graf-after--p">A good analogy for a heap is to imagine a dog who comes across a random pile (heap) of food containing everything from meat to dog treats to kibble to broccoli. The dog will sift through the heap to find the tastiest bits and bring them up to the top, and the less desirable pieces will sink to the bottom. First, the dog will eat the meat. Then he/she will move on to treats, and then the kibble. The broccoli will probably be left behind.</p><p name="53d1" id="53d1" class="graf--p graf-after--p">Similarly in a heap, each time something is removed from the top, the items come up to the top in priority order, while the low-priority items sink to the bottom. This is useful for many applications, including the famous heapsort sorting algorithm and the aforementioned priority queue.</p><h4 name="a2bf" id="a2bf" class="graf--h4 graf-after--p">Let’s build a heap</h4><p name="9691" id="9691" class="graf--p graf-after--h4">Heaps are often implemented with a fixed number of children for each node (usually 2). Due to these constraints, nodes can be stored in a dynamic array rather than in a true nodes-and-pointers tree. An item’s parent and children are found using some arithmetic rather than storing pointers alongside the data. In a 0-indexed array, the children are at 2i + 1 and 2i + 2, and the parent is at floor((i-1)/2).</p><p name="87d1" id="87d1" class="graf--p graf-after--p">At this point though, our heap is still just an array that is trying too hard to be a tree. A few further methods are required to make it a heap.</p><p name="e05f" id="e05f" class="graf--p graf-after--p">The first consideration for any heap is the “heap property”, which determines priority of heap items. In a min-heap, the heap property is that a parent node must always have a smaller value than its children. In a max-heap the heap property is the opposite — the parent must have a larger value than its children. In <a href="https://github.com/JMazzy/heap-it-up" data-href="https://github.com/JMazzy/heap-it-up" class="markup--anchor markup--p-anchor" rel="nofollow">my implementation</a>, I created MinHeap and MaxHeap classes to extend my generic Heap class. The two classes differ only in their ‘<em class="markup--em markup--p-em">match_heap_property?(parent,child)</em>’ method which returns true if the two parameters match the respective heap property.</p><p name="5719" id="5719" class="graf--p graf-after--p">The <em class="markup--em markup--p-em">sift-down</em> operation moves an out-of-place node further down in the tree until it either is in place or is a “leaf” (node with no children). This is used in the <em class="markup--em markup--p-em">remove</em> operation to rearrange the tree after removing the priority element, as well as in the <em class="markup--em markup--p-em">heapify</em> method (further explained below).</p><p name="efe6" id="efe6" class="graf--p graf-after--p">The <em class="markup--em markup--p-em">sift-up</em> operation moves an out-of-place node further up the tree until it either is in place or is the root of the tree (node with no parent). This is used to rearrange the tree after an item is added to the bottom.</p><p name="5917" id="5917" class="graf--p graf-after--p">Both of these operations are very similar to the well-known but terribly inefficient “bubble sort” in that items are swapped up the chain to the top. The difference here is that it is done in a binary tree, and only needs to be done once to bring the desired element to the top, so the time efficiency is a much better O(log n).</p><p name="592c" id="592c" class="graf--p graf-after--p">Another operation, which is actually the first one done when building a heap from an array, is the <em class="markup--em markup--p-em">heapify</em> operation. Starting from the lowest parent (the parent node of array.length-1) and iterating backwards through the array, repeatedly call <em class="markup--em markup--p-em">sift-down</em> on the current element. This operation, which only has to be done once, has a time efficiency of O(n).</p><p name="d3d3" id="d3d3" class="graf--p graf-after--p">You then have a heap which can be used for all kinds of things!</p><h4 name="919c" id="919c" class="graf--h4 graf-after--p">Heap sort</h4><p name="ae0d" id="ae0d" class="graf--p graf-after--h4">A heap is very closely related to “heap sort”, a classic sorting algorithm. Heap sort first does a max <em class="markup--em markup--p-em">heapify</em> on the array, then repeatedly swaps the first and last items. It keeps track of the border between the unsorted sub-list and the sorted sub-list which is being built. It then does a <em class="markup--em markup--p-em">sift-down</em> on the unsorted portion of the list. This is repeated until the list is sorted.</p><p name="95cc" id="95cc" class="graf--p graf-after--p graf--last">Check out <a href="https://github.com/JMazzy/heap-it-up" data-href="https://github.com/JMazzy/heap-it-up" class="markup--anchor markup--p-anchor" rel="nofollow">my code on github</a>! In it I implement min-heap, max-heap, a priority queue, and heap sort.</p></div></div></section>
+</section>
+<footer><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2016.</p><p><a href="https://medium.com/p/2b1afc20c167">View the original</a></p></footer></article>
+
+</body></html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Raindrops Keep Falling on my Array… - exported from Medium</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 18px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      </style></head><body><article>
+<header>
+<h1>Raindrops Keep Falling on my Array…</h1>
+</header>
+<section data-field="subtitle">
+The Rainwater Trapping Problem
+</section>
+<section data-field="body">
+<section name="89ce" class=" section--body section--first section--last"><div class="section-divider layoutSingleColumn"><hr class="section-divider"></div><div class="section-content"><div class="section-inner layoutSingleColumn"><h3 name="995b" id="995b" class="graf--h3 graf--first">Raindrops Keep Falling on my Array…</h3><h4 name="f299" id="f299" class="graf--h4 graf-after--h3">The Rainwater Trapping Problem</h4><p name="fef3" id="fef3" class="graf--p graf-after--h4">At Viking Code School we’ve been challenging each other with algorithm problems. This week I decided to go with the rainwater trapping problem.</p><blockquote name="d1ea" id="d1ea" class="graf--blockquote graf-after--p">Given an array of positive integers representing an elevation map, imagine that rain water could be “trapped” by that elevation map. Write an algorithm to determine how much rainwater could be trapped.</blockquote><p name="5858" id="5858" class="graf--p graf-after--blockquote">Rainwater is assumed to “leak” out the side of the graph, and the size of “columns” and “rows” is assumed to be 1 to simplify calculations. To make this clearer, here’s a visualization for [0,1,0,2,1,0,1,3,2,1,2,1], which traps 6 units of water:</p><figure name="68bb" id="68bb" class="graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 412px; max-height: 161px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 39.1%;"></div><div class="progressiveMedia js-progressiveMedia graf-image" data-image-id="1*oLVyUXno0uhUATSv5yhgvg.png" data-width="412" data-height="161"><img src="https://cdn-images-1.medium.com/freeze/max/30/1*oLVyUXno0uhUATSv5yhgvg.png?q=20" crossorigin="anonymous" class="progressiveMedia-thumbnail js-progressiveMedia-thumbnail"><canvas class="progressiveMedia-canvas js-progressiveMedia-canvas"></canvas><img class="progressiveMedia-image js-progressiveMedia-image" data-src="https://cdn-images-1.medium.com/max/800/1*oLVyUXno0uhUATSv5yhgvg.png"><noscript class="js-progressiveMedia-inner"><img class="progressiveMedia-noscript js-progressiveMedia-inner" src="https://cdn-images-1.medium.com/max/800/1*oLVyUXno0uhUATSv5yhgvg.png"></noscript></div></div></figure><p name="8d6b" id="8d6b" class="graf--p graf-after--figure">Take some time to figure out out for yourself, if you are so inclined, before moving on to a couple of solutions below.</p><p name="ea04" id="ea04" class="graf--p graf-after--p">…</p><h4 name="7d6e" id="7d6e" class="graf--h4 graf-after--p">Two solutions</h4><p name="e4c7" id="e4c7" class="graf--p graf-after--h4">An approach that might seem to make sense at first is to replicate the visualization, but that requires turning a nice simple 1-dimensional array into a bloated 2-dimensional one. Then you have an n^2 problem, which we want to avoid!</p><p name="527a" id="527a" class="graf--p graf-after--p">One thing that does seem to be necessary is to iterate from both ends, and keep track of local and global maxima. This prevents missing a case like the one between two twos three spots from the end. Here are two solutions which follow this approach (see the Github Gist below).</p><p name="5722" id="5722" class="graf--p graf-after--p">The first is one I found online, and is pretty typical of ones you’ll see. Basically, in this version you have to loop through the array a bunch of times.</p><ol class="postList"><li name="6680" id="6680" class="graf--li graf-after--p">Build up arrays of the iterative maximum (maximum “so far” as you go through the array) going in one direction and then the other.</li><li name="a74f" id="a74f" class="graf--li graf-after--li">Then you go through again, building a new array of the smaller number from each of those arrays.</li><li name="01b2" id="01b2" class="graf--li graf-after--li">Subtract the original array from that one.</li><li name="bb9b" id="bb9b" class="graf--li graf-after--li">Return a the sum of the result.</li></ol><p name="0cea" id="0cea" class="graf--p graf-after--li">Each of these steps requires a separate loop! Whew… getting tired just looking at it. Below that you can see my solution, which as far as I an tell works just as well and is much more efficient. Same O(n) but with a better constant and a best-case of (log n).</p><figure name="7edb" id="7edb" class="graf--figure graf--iframe graf-after--p"><div class="iframeContainer"><IFRAME width="700" height="250" src="/media/115fe2b5fbff84bcbde5349fff8eb79d?maxWidth=700" data-media-id="115fe2b5fbff84bcbde5349fff8eb79d" frameborder="0"></IFRAME></div></figure><p name="8feb" id="8feb" class="graf--p graf-after--figure">The second solution does basically the same thing in a single loop and a few extra variables (as opposed to 4 loops and a few extra <em class="markup--em markup--p-em">arrays</em>). Basically:</p><ol class="postList"><li name="2a01" id="2a01" class="graf--li graf-after--p">Start from both ends, keeping track of left and right indices.</li><li name="59c0" id="59c0" class="graf--li graf-after--li">Keep track of the max encountered by the left pointer, the max encountered by the right pointer, and the global max.</li><li name="2215" id="2215" class="graf--li graf-after--li">Keep track of the water which can be captured by each space, “dumping” it into the total at logical points (i.e. when encountering a new max).</li><li name="d66a" id="d66a" class="graf--li graf-after--li">Iterate pointers only when not at a global max (with some tie-breaker logic). This prevents pointers from having to look at more than one “well” of trapped water at once. Break when the pointers meet.</li></ol><p name="14f0" id="14f0" class="graf--p graf-after--li">So the worst-case time complexity in this case is the same as the other approach, but with a much better best case. The best case would be the pointers meeting near the middle of the array, giving a complexity of (log n).</p><p name="0602" id="0602" class="graf--p graf-after--p graf--last">If you can think of a better approach, please post it in the comments!</p></div></div></section>
+</section>
+<footer><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2016.</p><p><a href="https://medium.com/p/9e3fb4eda37e">View the original</a></p></footer></article>
+
+</body></html>

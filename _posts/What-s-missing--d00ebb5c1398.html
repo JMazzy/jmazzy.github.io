@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>What’s missing? - exported from Medium</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 18px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      </style></head><body><article>
+<header>
+<h1>What’s missing?</h1>
+</header>
+<section data-field="subtitle">
+This week’s algorithm problem
+</section>
+<section data-field="body">
+<section name="f109" class=" section--body section--first section--last"><div class="section-divider layoutSingleColumn"><hr class="section-divider"></div><div class="section-content"><div class="section-inner layoutSingleColumn"><h3 name="0ee8" id="0ee8" class="graf--h3 graf--first">What’s missing?</h3><h4 name="d391" id="d391" class="graf--h4 graf-after--h3">This week’s algorithm problem</h4><p name="ce3b" id="ce3b" class="graf--p graf-after--h4">Each week we are finding a new algorithm problem to present as a challenge to the class (and in a blog). Since my choice last week was way too big and had to be boiled down a lot to create the actual challenge, I backed off a little and went with a more interview-style algorithm problem this week.</p><p name="8e92" id="8e92" class="graf--p graf-after--p">So you have a bag, filled with all the numbers between 1 and 100. You take one at random, and throw it away without looking at it. How do you know which one is missing?</p><h4 name="c224" id="c224" class="graf--h4 graf-after--p">The “sorted” variation</h4><p name="c98f" id="c98f" class="graf--p graf-after--h4">There are many variations on the problem, and many ways to solve it. Let’s look first at the case where we assume there is <em class="markup--em markup--p-em">exactly one</em> number missing and these numbers are already in a <em class="markup--em markup--p-em">sorted array.</em></p><p name="caaa" id="caaa" class="graf--p graf-after--p">Since the array is sorted, the most direct approach would be to go through the array starting at the beginning, check each number, and compare it to the previous number. If they differ by anything other than 1, you can assume that the number between them is the missing number. This seems like a naive, brute-force solution, but actually turns out to not be too bad. It has a worst-case of O(n), and a potentially much better best-case because you can usually break before traversing the entire loop.</p><h4 name="47a6" id="47a6" class="graf--h4 graf-after--p">The “unsorted” variation</h4><p name="171e" id="171e" class="graf--p graf-after--h4">The next version is a little harder — there is still <em class="markup--em markup--p-em">exactly one</em> number missing, but the numbers are now in <em class="markup--em markup--p-em">random order.</em></p><p name="8922" id="8922" class="graf--p graf-after--p">Now, in order to use our iterative solution, we’d have to first sort the array, which automatically increases the time efficiency to O(n <em class="markup--em markup--p-em">log</em> n) since even the best sorting algorithms are really pretty slow.</p><p name="cb7d" id="cb7d" class="graf--p graf-after--p">It turns out there’s a better way using math. There is something called an arithmetic series that looks a whole lot like what we are working with here:</p><p name="bf98" id="bf98" class="graf--p graf-after--p">1, 2, 3, 4,…,100</p><p name="350f" id="350f" class="graf--p graf-after--p">There’s a formula to find the sum of an arithmetic series. The numbers don’t even have to count by one. As long as they count by a predictable amount, you can find the sum of the series. Here it is:</p><figure name="ee35" id="ee35" class="graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 89px; max-height: 43px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 48.3%;"></div><img class="graf-image" data-image-id="0*_RDEXU-Au6CPGl5B.png" data-width="89" data-height="43" src="https://cdn-images-1.medium.com/max/800/0*_RDEXU-Au6CPGl5B.png"></div><figcaption class="imageCaption">The sum of an arithmetic series (from <a href="https://en.wikipedia.org/wiki/Arithmetic_progression" data-href="https://en.wikipedia.org/wiki/Arithmetic_progression" class="markup--anchor markup--figure-anchor" rel="nofollow">Wikipedia</a>)</figcaption></figure><p name="714e" id="714e" class="graf--p graf-after--figure">Armed with this formula, we can find the sum of the complete series easily, and then subtract the actual sum of our incomplete series and we have our missing number!</p><pre name="1ae9" id="1ae9" class="graf--pre graf-after--p">missing = ( 100 * ( 1 + 100 ) / 2 ) - ( sum_of_incomplete_series )</pre><p name="0e5b" id="0e5b" class="graf--p graf-after--pre">This solution is nice and elegant. But there’s a little problem — the time complexity is always going to be O(n) due to the fact that in order to find the sum of the incomplete series we still need to iterate through the entire array. In fact, any solution to this problem will have a worst-case of O(n) — you must traverse the array at least once in order to find which one is missing.</p><p name="3e7d" id="3e7d" class="graf--p graf-after--p">One interesting thing I found while working on this problem is that for a <em class="markup--em markup--p-em">sorted</em> array, <em class="markup--em markup--p-em">the naive solution will almost always be faster</em>. This is because as long as the missing number is not the last number, you can break your iteration before you iterate through the entire loop. I confirmed this with benchmarks — sometimes it is much, much, faster.</p><p name="b9a9" id="b9a9" class="graf--p graf-after--p">For an unsorted array, the math way will always be better because then you don’t have to sort the array first! Using benchmarks, I found a small but consistent and significant improvement over sort-and-iterate.</p><h4 name="c74a" id="c74a" class="graf--h4 graf-after--p">More than one missing</h4><p name="5dc1" id="5dc1" class="graf--p graf-after--h4">What if there is more than one missing? If they are sorted, this really only requires a little adjustment for the iterative approach to work. You simply keep going until you have the number of missing numbers you need. If you don’t know how many are missing, you can get the array length and subtract that from the length of a “full” array. If the array is unsorted, we of course have to sort it first just like before.</p><p name="4bda" id="4bda" class="graf--p graf-after--p">What about doing this mathematically? Well, there’s a way! It’s not an easy way, but it’s a way. I’m not going to go into it here, but check out <a href="http://stackoverflow.com/questions/3492302/easy-interview-question-got-harder-given-numbers-1-100-find-the-missing-numbe" data-href="http://stackoverflow.com/questions/3492302/easy-interview-question-got-harder-given-numbers-1-100-find-the-missing-numbe" class="markup--anchor markup--p-anchor" rel="nofollow">this stack overflow question</a> if you are interested. As noted in this question, most non-math-majors would have some difficulty coming up with this on their own off the top of their heads. But it’s pretty cool anyway.</p><p name="3810" id="3810" class="graf--p graf-after--p graf--last">So that’s the “missing number” problem. I hope you found it enlightening.</p></div></div></section>
+</section>
+<footer><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2016.</p><p><a href="https://medium.com/p/d00ebb5c1398">View the original</a></p></footer></article>
+
+</body></html>

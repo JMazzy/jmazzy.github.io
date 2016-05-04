@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Ponds, ponds, ponds - exported from Medium</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 18px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      </style></head><body><article>
+<header>
+<h1>Ponds, ponds, ponds</h1>
+</header>
+<section data-field="subtitle">
+The pond-counting problem
+</section>
+<section data-field="body">
+<section name="02b8" class=" section--body section--first section--last"><div class="section-divider layoutSingleColumn"><hr class="section-divider"></div><div class="section-content"><div class="section-inner layoutSingleColumn"><h3 name="5755" id="5755" class="graf--h3 graf--first">Ponds, ponds, ponds</h3><h4 name="722a" id="722a" class="graf--h4 graf-after--h3">The pond-counting problem</h4><p name="0031" id="0031" class="graf--p graf-after--h4">One of my previous posts focused on the rainwater trapping problem. This time, keeping with the water theme, I worked through the pond counting problem.</p><p name="e32e" id="e32e" class="graf--p graf-after--p">Here it is (paraphrased from <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-Edition/dp/0984782850/ref=dp_ob_title_bk" data-href="http://www.amazon.com/Cracking-Coding-Interview-6th-Edition/dp/0984782850/ref=dp_ob_title_bk" class="markup--anchor markup--p-anchor" rel="nofollow"><em class="markup--em markup--p-em">Cracking the Coding Interview</em></a>):</p><blockquote name="98ee" id="98ee" class="graf--blockquote graf-after--p">You have a 2-dimensional integer matrix representing a plot of land with a number of ponds on it. A zero represents “water”, and any other integer represents solid ground.</blockquote><blockquote name="a067" id="a067" class="graf--blockquote graf-after--blockquote">A “pond” is any region of connected water, and can be connected vertically, horizontally, or diagonally. The “size” of a pond is the total number of connected water cells in the pond.</blockquote><blockquote name="c4f4" id="c4f4" class="graf--blockquote graf-after--blockquote">Write a function which computes the sizes of all ponds in the matrix and outputs it to the console as an array of pond sizes. The order is not important as long as you have the right number of ponds in the correct sizes.</blockquote><p name="2d5d" id="2d5d" class="graf--p graf-after--blockquote">Here is a sample input and its expected output:</p><pre name="23a8" id="23a8" class="graf--pre graf-after--p">Sample Input:  [ [0,2,1,0],<br>                 [0,1,0,1],<br>                 [1,1,0,1],<br>                 [0,1,0,1] ];</pre><pre name="2940" id="2940" class="graf--pre graf-after--pre">Expected Output: [2,4,1]</pre><p name="e1eb" id="e1eb" class="graf--p graf-after--pre">Try it now, if you like.</p><p name="2ad5" id="2ad5" class="graf--p graf-after--p">…</p><h4 name="8661" id="8661" class="graf--h4 graf-after--p">My Solution</h4><p name="7e97" id="7e97" class="graf--p graf-after--h4">The basic approach to this problem is to iterate through the 2-d array and find all water squares. Then propagate out to the neighbors of those squares, counting all the zeros. Keep going until there are no water neighbors and add that pond size to the list. Keep track of all visited squares in some way in order to avoid visiting (or counting) them again. Once you have iterated through the array, and assuming you did the counting and tracking correctly, you should have all the pond sizes.</p><p name="6faf" id="6faf" class="graf--p graf-after--p">Here’s the code for my solution:</p><figure name="63a9" id="63a9" class="graf--figure graf--iframe graf-after--p"><div class="iframeContainer"><IFRAME width="700" height="250" src="/media/20c10b83ff00e3cd37137aaecff40170?maxWidth=700" data-media-id="20c10b83ff00e3cd37137aaecff40170" frameborder="0"></IFRAME></div><figcaption class="imageCaption">Lots of comments… hopefully that makes it easier (not harder) to follow!</figcaption></figure><p name="9503" id="9503" class="graf--p graf-after--figure">Note that I used a “revealing module” pattern in my JavaScript in this case — this is certainly not necessary for a one-off problem like this but is a good practice for larger projects where having a distinction between public and private variables and functions is a good idea. You would call PondSize.pondSizes(inputArray) to get the answer.</p><p name="7672" id="7672" class="graf--p graf-after--p">I used a stack (actually a JavaScript array functioning as a stack) and while loops to find the size of each pond. This is basically a depth-first search on a graph. The “graph” is really just the array and a function to predictably find the neighboring cells, but it functions similarly.</p><h4 name="60ef" id="60ef" class="graf--h4 graf-after--p">Another Approach</h4><p name="9c42" id="9c42" class="graf--p graf-after--h4">Another approach (which I looked up after solving it in the above way) would be to take care of tracking visited cells using a second array (or if you don’t mind modifying the input array, by putting a -1 in the visited cells). This might be slightly more efficient than my approach (as it wouldn’t involve splicing values out of an array, which in some cases can be an expensive operation). You could also use recursion rather than iteration to do the pond-size calculation. Otherwise, other solutions seem to be pretty similar to mine.</p><h4 name="9943" id="9943" class="graf--h4 graf-after--p">Time Complexity</h4><p name="0bdc" id="0bdc" class="graf--p graf-after--h4">The time complexity for all solutions seems to be O(W*H), with W and H referring to the width and height of the input array. While there are several other steps involved, the nested for loops would dominate in large data sets. Using copious loops seems unavoidable. The while loops might seem at first to contribute to a higher complexity, but the number of iterations quickly decreases as more squares are visited.</p><h4 name="2212" id="2212" class="graf--h4 graf-after--p">Next Steps</h4><p name="b874" id="b874" class="graf--p graf-after--h4 graf--last">I hope you enjoyed this problem. It’s my last one as part of Viking Code School’s teaching problems. Now I will be looking for jobs! I’ll surely be doing more as part of interviews and interview prep. It’s hard to believe my journey as a Viking is nearly complete, but I am looking forward to coding professionally!</p></div></div></section>
+</section>
+<footer><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2016.</p><p><a href="https://medium.com/p/d78d3c861281">View the original</a></p></footer></article>
+
+</body></html>
