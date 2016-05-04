@@ -258,6 +258,19 @@ h1, h2, h3, h4 {
 	color: $headline;
 }
 
+a:link {
+  color: #555;
+}
+
+a:visited {
+  color: #777;
+}
+
+a:hover {
+  color: #337ab7;
+  text-decoration: none;
+}
+
 .container {
 	padding: 20px;
 }
@@ -317,37 +330,10 @@ article {
 
 	width: $radius * 2;
 	height: $radius * 2;
-	//
-	// transition: width 0.5s linear; /* vendorless fallback */
-  //   -o-transition: width 0.5s linear; /* opera */
-  //   -ms-transition: width 0.5s linear; /* IE 10 */
-  //   -moz-transition: width 0.5s linear; /* Firefox */
-  //   -webkit-transition: width 0.5s linear; /*safari and chrome */
-	//
-	// transition: height 0.5s linear; /* vendorless fallback */
-  //   -o-transition: height 0.5s linear; /* opera */
-  //   -ms-transition: height 0.5s linear; /* IE 10 */
-  //   -moz-transition: height 0.5s linear; /* Firefox */
-  //   -webkit-transition: height 0.5s linear; /*safari and chrome */
 }
 
 .circle:hover {
 	box-shadow: 0 0 20px $shadow;
-
-	// width: $radius * 2.5;
-	// height: $radius * 2.5;
-	//
-	// transition: width 0.5s linear; /* vendorless fallback */
-	// 	-o-transition: width 0.5s linear; /* opera */
-	// 	-ms-transition: width 0.5s linear; /* IE 10 */
-	// 	-moz-transition: width 0.5s linear; /* Firefox */
-	// 	-webkit-transition: width 0.5s linear; /*safari and chrome */
-	//
-	// transition: height 0.5s linear; /* vendorless fallback */
-	// 	-o-transition: height 0.5s linear; /* opera */
-	// 	-ms-transition: height 0.5s linear; /* IE 10 */
-	// 	-moz-transition: height 0.5s linear; /* Firefox */
-	// 	-webkit-transition: height 0.5s linear; /*safari and chrome */
 }
 
 .circle-headline {
