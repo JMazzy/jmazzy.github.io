@@ -15,7 +15,7 @@ permalink: /posts/
 			</p>
 		</div>
 		<div class="col-xs-6">
-			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="pull-right">{{ page.date | date: "%b %-d, %Y" }}</time>
+			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</time>
 		</div>
 	</div>
 {% endfor %}
