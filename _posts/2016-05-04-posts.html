@@ -8,8 +8,14 @@ permalink: /posts/
 {% assign posts = site.posts | where:"layout", "post" | sort:"date" | reverse %}
 
 {% for post in posts %}
-	<p>
-		<a href="{{ post.url }}">{{ post.title }}</a>&nbsp;
-		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-	</p>
+	<div class="row">
+		<div class="col-xs-6">
+			<p>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</p>
+		</div>
+		<div class="col-xs-6">
+			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="pull-right">{{ page.date | date: "%b %-d, %Y" }}</time>
+		</div>
+	</div>
 {% endfor %}
