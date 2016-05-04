@@ -6,7 +6,7 @@ categories: page posts
 permalink: /posts/
 ---
 {% assign posts = site.posts | where:"layout", "post" | sort:"date" | reverse %}
-
+<hr>
 {% for post in posts %}
 	<div class="row">
 		<div class="col-xs-6">
@@ -18,4 +18,5 @@ permalink: /posts/
 			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</time>
 		</div>
 	</div>
+	<hr>
 {% endfor %}
