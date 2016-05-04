@@ -6,7 +6,7 @@ categories: page posts
 permalink: /posts/
 ---
 
-{% for post in site.posts | where: 'layout', 'post' %}
+{% for post in site.posts | where: "post.layout === post" %}
 	<p>
 		<a href="{{ post.url }}">{{ post.title }}</a>
 	</p>
