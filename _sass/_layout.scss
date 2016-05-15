@@ -351,27 +351,12 @@ article {
 	background-size: auto ($radius * 2);
 }
 
-.header {
+header, footer {
 	padding: 20px;
 	background-color: $bubble;
 	color: $light-text;
 	box-shadow: 0 0 10px $shadow;
 	text-shadow: 2px 2px 2px $dark-text;
-}
-
-.footer {
-	padding: 20px;
-	height: 64px;
-	border-radius: 32px;
-	background-color: $bubble;
-	color: $light-text;
-	box-shadow: 0 0 10px $shadow;
-	text-shadow: 2px 2px 2px $dark-text;
-}
-
-.light-footer {
-	padding: 20px;
-	color: $dark-text;
 }
 
 .text-box {
