@@ -64,9 +64,7 @@ article {
 }
 
 .circle {
-  margin-top: 20px;
-
-	box-shadow: 0 0 10px $shadow;
+  box-shadow: 0 0 10px $shadow;
 
 	color: $light-text;
 	text-shadow: 2px 2px 2px $dark-text;
@@ -125,4 +123,9 @@ i.fa {
   text-align: left;
   height: 32px;
   width: 32px;
+}
+
+main {
+	margin-top: 70px;
+	margin-bottom: 50px;
 }
