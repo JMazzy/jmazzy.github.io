@@ -1,22 +1,19 @@
 ---
 layout: default
 ---
-<main class="container">
 
-  <section class="row">
+<section class="row">
 
-  	<section class="col-md-9">
-      <h1 class="post-title text-center">{{ page.title }}</h1>
+	<section class="col-md-9">
+    <h1 class="post-title text-center">{{ page.title }}</h1>
 
-      <div class="post-content">
-        {{ content }}
-      </div>
-    </section>
-
-    <section class="col-md-3">
-      {% include right-nav.html %}
-    </section>
-
+    <div class="post-content">
+      {{ content }}
+    </div>
   </section>
 
-</main>
+  <section class="col-md-3">
+    {% include right-nav.html %}
+  </section>
+
+</section>

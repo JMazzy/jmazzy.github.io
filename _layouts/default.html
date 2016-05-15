@@ -5,13 +5,17 @@
 
   <body>
 
-    <main class="container-fluid">
+    <header class="container-fluid">
       {% include header.html %}
+    </header>
 
+    <main class="container">
       {{ content }}
-
-      {% include footer.html %}
     </main>
+
+    <footer class="container-fluid">
+      {% include footer.html %}
+    </footer>
 
   </body>
 
