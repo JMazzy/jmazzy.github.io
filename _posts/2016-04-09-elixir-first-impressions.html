@@ -1,0 +1,32 @@
+---
+layout: post
+title: Elixir: First Impressions
+date: 2016-04-09
+categories: elixir phoenix skill-sprint
+---
+
+<h4>Skill Sprint</h4>
+
+<p>We’re about to get into final projects in Viking Code School. It’s hard to believe we are this close to the end of the class! This weekend there is one last “skill sprint” where we choose a substantial skill of our choice, learn the basics, build a sample project, and report back to the class. I chose the Elixir programming language.</p>
+
+<h4>About Elixir</h4>
+
+<p>Straight from the <a href="http://elixir-lang.org">Elixir website</a>:</p>
+
+<blockquote>Elixir is a dynamic, functional language designed for building scalable and maintainable applications.</blockquote>
+
+<blockquote>Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain.</blockquote>
+
+<p>The most obvious difference between Elixir and other languages I’ve used is its <a href="https://en.wikipedia.org/wiki/Functional_programming">functional programming</a> paradigm. Functional programming differs from imperative programming (i.e. most other programming languages) in that a function’s output is not affected by the state of the program, only its inputs. That is, the function’s output will always be the same for the same inputs. Functions in functional languages also do not have “side effects”. This is quite different from the object-oriented programming I am most familiar with.</p>
+
+<p>Elixir is also designed specifically with <a href="https://en.wikipedia.org/wiki/Concurrent_computing">concurrency</a> in mind. This allows multiple processes to be executed simultaneously, independent of one another, communicating by sending and receiving messages. This contributes to its scalability (through starting more processes to handle more operations) and fault tolerance (through the ability to spawn new processes if one fails).</p>
+
+<h4>What is it good for?</h4>
+
+<p>Basically, any system where concurrent and asynchronous processes are inherently important would make good use of Elixir. Elixir has many potential uses, but the main one I am interested in is its use in web applications.</p>
+
+<p>As useful as popular back-end frameworks like Ruby on Rails are, they have their limits as applications start to get large and need to be scaled rapidly or maintained over the long term. The <a href="http://www.phoenixframework.org/">Phoenix</a> web framework is written in Elixir and is meant to play to its strengths while also maintaining familiar patterns from other frameworks. For instance, it uses the MVC (model, view, controller) architecture like Ruby on Rails, but has much better performance for large and complex applications.</p>
+
+<h4>Conclusion</h4>
+
+<p>I’ve barely scratched the surface on Elixir, but so far it looks super interesting and useful. I hope to write more about it once I’ve had a chance to learn more and start building projects.</p>

@@ -1,0 +1,50 @@
+---
+layout: post
+title: What’s missing?
+date: 2016-01-24
+categories: algorithm
+---
+
+<h4>This week’s algorithm problem</h4>
+
+<p>Each week we are finding a new algorithm problem to present as a challenge to the class (and in a blog). Since my choice last week was way too big and had to be boiled down a lot to create the actual challenge, I backed off a little and went with a more interview-style algorithm problem this week.</p>
+
+<p>So you have a bag, filled with all the numbers between 1 and 100. You take one at random, and throw it away without looking at it. How do you know which one is missing?</p>
+
+<h4>The “sorted” variation</h4>
+
+<p>There are many variations on the problem, and many ways to solve it. Let’s look first at the case where we assume there is <em class="">exactly one</em> number missing and these numbers are already in a <em class="">sorted array.</em>
+
+</p>
+
+<p>Since the array is sorted, the most direct approach would be to go through the array starting at the beginning, check each number, and compare it to the previous number. If they differ by anything other than 1, you can assume that the number between them is the missing number. This seems like a naive, brute-force solution, but actually turns out to not be too bad. It has a worst-case of O(n), and a potentially much better best-case because you can usually break before traversing the entire loop.</p>
+
+<h4>The “unsorted” variation</h4>
+
+<p>The next version is a little harder — there is still <em class="">exactly one</em> number missing, but the numbers are now in <em class="">random order.</em>
+
+</p>
+
+<p>Now, in order to use our iterative solution, we’d have to first sort the array, which automatically increases the time efficiency to O(n <em class="">log</em> n) since even the best sorting algorithms are really pretty slow.</p>
+
+<p>It turns out there’s a better way using math. There is something called an arithmetic series that looks a whole lot like what we are working with here:</p>
+
+<p>1, 2, 3, 4,…,100</p>
+
+<p>There’s a formula to find the sum of an arithmetic series. The numbers don’t even have to count by one. As long as they count by a predictable amount, you can find the sum of the series. Here it is:</p>
+
+<figure>
+
+<div class="aspectRatioPlaceholder is-locked" style="max-width: 89px; max-height: 43px;">
+
+<div class="aspectRatioPlaceholder-fill" style="padding-bottom: 48.3%;">
+
+</div>
+
+<img class="graf-image" data-image-id="0*_RDEXU-Au6CPGl5B.png" data-width="89" data-height="43" src="https://cdn-images-1.medium.com/max/800/0*_RDEXU-Au6CPGl5B.png">
+
+</div>
+
+<figcaption class="imageCaption">The sum of an arithmetic series (from <a href="https://en.wikipedia.org/wiki/Arithmetic_progression">this stack overflow question</a> if you are interested. As noted in this question, most non-math-majors would have some difficulty coming up with this on their own off the top of their heads. But it’s pretty cool anyway.</p>
+
+<p>So that’s the “missing number” problem. I hope you found it enlightening.</p>
