@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<h1 class="post-header">{{ page.title }}</h1>
-<p class="post-date">
-  {{ page.date | date: "%B %d, %Y"}}
-</p>
+<div class="post-header">
+  <h2 class="post-title">{{ page.title }}</h2>
+  <p class="post-date">
+    {{ page.date | date: "%B %d, %Y"}}
+  </p>
+</div>
 
 <div class="post-content">
   {{ content }}
