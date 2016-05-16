@@ -1,0 +1,37 @@
+- name: Front End
+  items:
+    - name: HTML5
+    - name: CSS3
+
+- name: JavaScript
+  items:
+    - name: jQuery
+    - name: AngularJS
+
+- name: Ruby
+  items:
+  - name: Rails
+  - name: Sinatra
+  - name: RSpec
+
+- name: Java
+  items:
+  - name: Android SDK
+  - name: libGDX
+
+- name: OS
+  items:
+  - name: Linux
+  - name: OSX
+  - name: Windows
+
+- name: Tools
+  items:
+  - name: Git and GitHub
+  - name: Pivotal Tracker
+
+- name: Practices
+  items:
+  - name: Agile
+  - name: Pair Programming
+  - name: TDD

@@ -1,230 +1,87 @@
 ---
 layout: page
-title:  About
+title:  CV
 date:   2016-05-04 08:59:42 -0400
 categories: page about
 permalink: /about/
 ---
+<a href="/projects">
+	<h2>Projects</h2>
+	<p>
+		Click to see my portfolio page.
+	</p>
+</a>
 
 <h2>Technical Skills</h2>
 
 <div class="row">
 
-	<div class="col-xs-5">
-		<h3>Front End</h3>
-	</div>
-	<div class="col-xs-7">
-		<p>
-			HTML5/CSS3/JS
-		</p>
-		<p>
-			jQuery
-		</p>
-		<p>
-			AngularJS
-		</p>
-	</div>
+	{% for skill in site.data.skills %}
+
+		<div class="skill-card col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<h3>{{ skill.name }}</h3>
+
+			{% for item in skill.items %}
+
+				<div class="skill">
+
+					{{ item.name }}
+
+				</div>
+
+			{% endfor %}
+
+		</div>
+
+	{% endfor %}
+
 </div>
 
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Back End</h3>
-	</div>
-	<div class="col-xs-7">
-		<p>
-			Ruby on Rails
-		</p>
-		<p>
-			Sinatra
-		</p>
-		<p>
-			PostgreSQL
-		</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Mobile</h3>
-	</div>
-	<div class="col-xs-7">
-		<p>
-			Android SDK
-		</p>
-		<p>
-			libGDX
-		</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Testing</h3>
-	</div>
-	<div class="col-xs-7">
-		<p>
-			RSpec
-		</p>
-		<p>
-			Guard
-		</p>
-		<p>
-			Capybara
-		</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Tools</h3>
-	</div>
-	<div class="col-xs-7">
-		<p>
-			Linux
-		</p>
-		<p>
-			Git
-		</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Practices</h3>
-	</div>
-	<div class="col-xs-7">
-		<p>
-			Agile
-		</p>
-		<p>
-			Pair Programming
-		</p>
-		<p>
-			TDD
-		</p>
-	</div>
-</div>
 
 <h2>Education</h2>
 
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Viking Code School</h3>
-		<h4>2016</h4>
-		<p>
-			A highly selective training program for learning professional agile software development. The 16-week intensive program includes daily projects, scrum meetings, pair programming, and code review. Gained depth and breadth of knowledge in Ruby, Rails, JavaScript, jQuery, and AngularJS. Learned testing, Agile best practices, and deployment.
-		</p>
-	</div>
+{% for school in site.data.schools %}
 
-	<div class="col-xs-7">
-		<h4>Projects</h4>
-		<div class="projects">
-			<strong>Danebook</strong>, a Facebook-like social network implemented with Ruby on Rails. Includes posting, commenting, liking, friending, and photos.
+	<div class="school-card">
+
+		<div class="row">
+			<div class="col-xs-5">
+				<h3>{{ school.name }}</h3>
+				<h4>{{ school.date }}</h4>
+			</div>
+
+			<div class="col-xs-7">
+				<h4>{{ school.program }}</h4>
+				<p>
+					{{ school.description }}
+				</p>
+			</div>
 		</div>
 
-		<div class="projects">
-			<strong>Reciffy</strong>, a recipe app, implemented with Rails and AngularJS. Features recommendations, subscriptions, comments, tags, and searching.
-		</div>
+	</div>
 
-		<div class="projects">
-			<strong>Djello</strong>, a Trello-like task list manager/organizer, implemented with Rails and AngularJS. Includes boards, lists, and tasks.
-		</div>
-	</div>
-</div>
+{% endfor %}
 
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Wesley Theological Seminary</h3>
-		<h4>2007-2010</h4>
-	</div>
-	<div class="col-xs-7">
-		<h4>
-			M.Div., with Honors
-		</h4>
-		<p>
-			Theology, Biblical Interpretation, Church Leadership, Counseling, and more. Included an internship and intercultural immersion.
-		</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Ithaca College</h3>
-		<h4>2004-2007</h4>
-	</div>
-	<div class="col-xs-7">
-		<h4>
-			B.S., Chemistry, Summa Cum Laude
-		</h4>
-		<p>
-			Advanced Organic Chemistry, NMR Spectroscopy, Physics, Calculus, and more. I also was a leader in the campus ministry and played guitar.
-		</p>
-	</div>
-</div>
 
 <h2>Experience</h2>
 
-<div class="row">
-	<div class="col-xs-5">
-		<h3>The Arc of Pennsylvania</h3>
-		<h4>2015</h4>
-	</div>
-	<div class="col-xs-7">
-		<h4>Communications Consultant</h4>
-		<p>
-			Improved their website and consulted about potential upgrades. Wrote and edited web and print content distributed to over 8,000 chapter members.
-		</p>
-	</div>
-</div>
+{% for job in site.data.jobs %}
 
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Self Employed</h3>
-		<h4>2013-2015</h4>
-	</div>
-	<div class="col-xs-7">
-		<h4>Dad and Coder</h4>
-		<p>
-			I was a stay at home dad for my daughter, while also teaching myself computer programming and writing apps.
-		</p>
-	</div>
-</div>
+	<div class="job-card ">
 
-<div class="row">
-	<div class="col-xs-5">
-		<h3>United Methodist Church</h3>
-		<h4>2010-2013</h4>
-	</div>
-	<div class="col-xs-7">
-		<h4>Pastor</h4>
-		<p>
-			Led congregations of hundreds of members in worship, preaching, counseling, and administration. Played a role in leading the churches in technology and web presence. Created a website for one of the churches.
-		</p>
-	</div>
-</div>
+		<div class="row">
+			<div class="col-xs-5">
+				<h3>{{ job.employer }}</h3>
+				<h4>{{ job.date }}</h4>
+			</div>
+			<div class="col-xs-7">
+				<h4>{{ job.title }}</h4>
+				<p>
+					{{ job.description }}
+				</p>
+			</div>
+		</div>
 
-<div class="row">
-	<div class="col-xs-5">
-		<h3>University of Washington</h3>
-		<h4>2006</h4>
 	</div>
-	<div class="col-xs-7">
-		<h4>Summer Research Intern</h4>
-		<p>
-			Graduate-level scientific research doing synthesis, spectroscopy, and product characterization, and data analysis. Published as a co-author in the work of a Ph.D. student.
-		</p>
-	</div>
-</div>
 
-<div class="row">
-	<div class="col-xs-5">
-		<h3>Ithaca College</h3>
-		<h4>2005-2006</h4>
-	</div>
-	<div class="col-xs-7">
-		<h4>Teaching Assistant and Researcher</h4>
-		<p>
-			Taught and supervised Organic Chemistry labs and performed chemistry research. Published as a co-author in the work of a professor.
-		</p>
-	</div>
-</div>
+{% endfor %}

@@ -10,10 +10,15 @@ $shadow: #2D3956;
 	font-size: 16px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	color: $headline;
   font-family: 'Raleway', sans-serif;
+	margin-bottom: 5px;
+}
+
+h2 {
+	margin-top: 15px;
 }
 
 a:link {
@@ -113,7 +118,7 @@ header, footer, .navbar-fixed-bottom {
 	box-shadow: 0 0 10px $shadow;
 	text-shadow: 2px 2px 2px $dark-text;
 
-	h1, h2, h3, h4 {
+	h1, h2, h3, h4, h5, h6, p {
 		color: $light-text;
 	}
 
@@ -143,8 +148,8 @@ i.fa {
 }
 
 main {
-	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	min-height: 70vh;
 }
 
@@ -155,4 +160,25 @@ main {
 .navbar-fixed-bottom {
 	border-radius: 0;
 	margin: 0;
+}
+
+.skill-card {
+	height: 150px;
+	padding: 15px;
+
+	h3 {
+		margin-bottom: 5px;
+	}
+
+	.skill {
+		margin-bottom: 2px;
+	}
+}
+
+.job-card, .school-card {
+	margin-top: 10px;
+
+	h4 {
+		font-weight: lighter;
+	}
 }

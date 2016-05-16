@@ -1,0 +1,53 @@
+- employer: The Arc of Pennsylvania
+  date: 2015
+  title: Communications Consultant
+  description: Improved their website and consulted about potential upgrades. Wrote and edited web and print content distributed to over 8,000 chapter members.
+  resume: yes
+
+- employer: Self Employed
+  date: 2013-2015
+  title: Dad and Coder
+  description: I was a stay at home dad for my daughter, while also teaching myself computer programming and writing apps.
+  resume: yes
+
+- employer: The United Methodist Church
+  date: 2010-2013
+  title: Pastor
+  description: Led congregations of hundreds of members in worship, preaching, counseling, and administration. Played a role in leading the churches in technology and web presence. Created a website for one of the churches.
+  resume: yes
+
+- employer: Wesley Theological Seminary
+  date: 2009
+  title: Student Worker
+  description: Worked around campus on various maintenance and setup responsibilities.
+  resume: no
+
+- employer: North Bethesda United Methodist Church
+  date: 2008-2010
+  title: Assistant Pastor/Intern
+  description: Helped the pastor with various duties around the church including leading studies, preaching, visitation, and administration.
+  resume: no
+
+- employer: The University of Washington
+  date: 2006
+  title: Summer Research Intern
+  description: Graduate-level scientific research doing synthesis, spectroscopy, and product characterization, and data analysis. Published as a co-author in the work of a Ph.D. student.
+  resume: yes
+
+- employer: Ithaca College
+  date: 2005-2006
+  title: Teaching Assistant and Researcher
+  description: Taught and supervised Organic Chemistry labs and performed chemistry research. Published as a co-author in the work of a professor.
+  resume: yes
+
+- employer: Amphenol
+  date: 2004
+  title: Test Lab Assistant
+  description: Assisted with digitizing records and performing engineering lab tests.
+  resume: no
+
+- employer: Juniata College
+  date: 2004
+  title: Stockroom Assistant
+  description: Helped people coming to the chemistry stockroom find what they needed.
+  resume: no
