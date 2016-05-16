@@ -13,38 +13,58 @@ categories: algorithm
 
 <h4>The “sorted” variation</h4>
 
-<p>There are many variations on the problem, and many ways to solve it. Let’s look first at the case where we assume there is <em class="">exactly one</em> number missing and these numbers are already in a <em class="">sorted array.</em>
-
-</p>
+<p>There are many variations on the problem, and many ways to solve it. Let’s look first at the case where we assume there is <em class="">exactly one</em> number missing and these numbers are already in a <em class="">sorted array.</em></p>
 
 <p>Since the array is sorted, the most direct approach would be to go through the array starting at the beginning, check each number, and compare it to the previous number. If they differ by anything other than 1, you can assume that the number between them is the missing number. This seems like a naive, brute-force solution, but actually turns out to not be too bad. It has a worst-case of O(n), and a potentially much better best-case because you can usually break before traversing the entire loop.</p>
 
 <h4>The “unsorted” variation</h4>
 
-<p>The next version is a little harder — there is still <em class="">exactly one</em> number missing, but the numbers are now in <em class="">random order.</em>
-
-</p>
+<p>The next version is a little harder — there is still <em class="">exactly one</em> number missing, but the numbers are now in <em class="">random order.</em></p>
 
 <p>Now, in order to use our iterative solution, we’d have to first sort the array, which automatically increases the time efficiency to O(n <em class="">log</em> n) since even the best sorting algorithms are really pretty slow.</p>
 
 <p>It turns out there’s a better way using math. There is something called an arithmetic series that looks a whole lot like what we are working with here:</p>
 
-<p>1, 2, 3, 4,…,100</p>
+<pre>1, 2, 3, 4,…,100</pre>
 
 <p>There’s a formula to find the sum of an arithmetic series. The numbers don’t even have to count by one. As long as they count by a predictable amount, you can find the sum of the series. Here it is:</p>
 
-<figure>
+<img src="/images/sum_series.png" alt="The sum of an arithmetic series" />
 
-<div class="aspectRatioPlaceholder is-locked" style="max-width: 89px; max-height: 43px;">
+<p>
+  The sum of an arithmetic series (from <a href="https://en.wikipedia.org/wiki/Arithmetic_progression">Wikipedia</a>)
+</p>
 
-<div class="aspectRatioPlaceholder-fill" style="padding-bottom: 48.3%;">
+<p>
+  Armed with this formula, we can find the sum of the complete series easily, and then subtract the actual sum of our incomplete series and we have our missing number!
+</p>
 
-</div>
+<pre>
+  missing = ( 100 * ( 1 + 100 ) / 2 ) - ( sum_of_incomplete_series )
+</pre>
 
-<img class="graf-image" data-image-id="0*_RDEXU-Au6CPGl5B.png" data-width="89" data-height="43" src="https://cdn-images-1.medium.com/max/800/0*_RDEXU-Au6CPGl5B.png">
+<p>
+  This solution is nice and elegant. But there’s a little problem — the time complexity is always going to be O(n) due to the fact that in order to find the sum of the incomplete series we still need to iterate through the entire array. In fact, any solution to this problem will have a worst-case of O(n) — you must traverse the array at least once in order to find which one is missing.
+</p>
 
-</div>
+<p>
+  One interesting thing I found while working on this problem is that for a sorted array, the naive solution will almost always be faster. This is because as long as the missing number is not the last number, you can break your iteration before you iterate through the entire loop. I confirmed this with benchmarks — sometimes it is much, much, faster.
+</p>
 
-<figcaption class="imageCaption">The sum of an arithmetic series (from <a href="https://en.wikipedia.org/wiki/Arithmetic_progression">this stack overflow question</a> if you are interested. As noted in this question, most non-math-majors would have some difficulty coming up with this on their own off the top of their heads. But it’s pretty cool anyway.</p>
+<p>
+  For an unsorted array, the math way will always be better because then you don’t have to sort the array first! Using benchmarks, I found a small but consistent and significant improvement over sort-and-iterate.
+</p>
 
-<p>So that’s the “missing number” problem. I hope you found it enlightening.</p>
+<h4>More than one missing</h4>
+
+<p>
+  What if there is more than one missing? If they are sorted, this really only requires a little adjustment for the iterative approach to work. You simply keep going until you have the number of missing numbers you need. If you don’t know how many are missing, you can get the array length and subtract that from the length of a “full” array. If the array is unsorted, we of course have to sort it first just like before.
+</p>
+
+<p>
+  What about doing this mathematically? Well, there’s a way! It’s not an easy way, but it’s a way. I’m not going to go into it here, but check out <a href="http://stackoverflow.com/questions/3492302/easy-interview-question-got-harder-given-numbers-1-100-find-the-missing-numbe"> this stack overflow question</a> if you are interested. As noted in this question, most non-math-majors would have some difficulty coming up with this on their own off the top of their heads. But it’s pretty cool anyway.
+</p>
+
+<p>
+  So that’s the “missing number” problem. I hope you found it enlightening.
+</p>

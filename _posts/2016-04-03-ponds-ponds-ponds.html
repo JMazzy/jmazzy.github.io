@@ -7,9 +7,9 @@ categories: algorithms data-structures
 
 <h4>The pond-counting problem</h4>
 
-<p>One of my previous posts focused on the rainwater trapping problem. This time, keeping with the water theme, I worked through the pond counting problem.</p>
+<p>One of my previous posts focused on the <a href="http://masland-sarani.com/algorithms/data-structures/arrays/2016/02/16/raindrops-array.html">rainwater trapping problem</a>. This time, keeping with the water theme, I worked through the pond counting problem.</p>
 
-<p>Here it is (paraphrased from <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-Edition/dp/0984782850/ref=dp_ob_title_bk" data-href="http://www.amazon.com/Cracking-Coding-Interview-6th-Edition/dp/0984782850/ref=dp_ob_title_bk" class="markup--anchor markup--p-anchor" rel="nofollow">
+<p>Here it is (paraphrased from <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-Edition/dp/0984782850/ref=dp_ob_title_bk">
 
   <em class="">Cracking the Coding Interview</em>
 
@@ -31,7 +31,7 @@ categories: algorithms data-structures
 
 <p>The basic approach to this problem is to iterate through the 2-d array and find all water squares. Then propagate out to the neighbors of those squares, counting all the zeros. Keep going until there are no water neighbors and add that pond size to the list. Keep track of all visited squares in some way in order to avoid visiting (or counting) them again. Once you have iterated through the array, and assuming you did the counting and tracking correctly, you should have all the pond sizes.</p>
 
-<!-- MISSING -->
+<script src="https://gist.github.com/JMazzy/fb6a546ff0af83aadd57ef261b8a5a10.js"></script>
 
 <p>Note that I used a “revealing module” pattern in my JavaScript in this case — this is certainly not necessary for a one-off problem like this but is a good practice for larger projects where having a distinction between public and private variables and functions is a good idea. You would call PondSize.pondSizes(inputArray) to get the answer.</p>
 
