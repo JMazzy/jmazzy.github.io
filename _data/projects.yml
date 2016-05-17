@@ -96,6 +96,7 @@
 
 - name: Seafarers Map Maker, JavaScript MVC
   description: I've experimented with a map randomizer for generating map ideas for the awesome Seafarers expansion to the board game Catan. Please note that I am in no way affiliated with anyone who makes the game. It is just a tool to help create random maps. This version uses a custom MVC architecture and jQuery. See below for another version.
+  github-link: https://github.com/JMazzy/hex-mapper
   deploy-link: http://masland-sarani.com/hex-mapper
   deploy-link-name: Demo
   category: games
