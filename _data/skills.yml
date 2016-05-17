@@ -1,36 +1,43 @@
 - name: Front End
+  resume: true
   items:
     - name: HTML5
     - name: CSS3
 
 - name: JavaScript
+  resume: true
   items:
     - name: jQuery
     - name: AngularJS
 
 - name: Ruby
+  resume: true
   items:
   - name: Rails
   - name: Sinatra
   - name: RSpec
 
 - name: Java
+  resume: true
   items:
   - name: Android SDK
   - name: libGDX
 
 - name: OS
+  resume: false
   items:
   - name: Linux
   - name: OSX
   - name: Windows
 
 - name: Tools
+  resume: true
   items:
   - name: Git and GitHub
   - name: Pivotal Tracker
 
 - name: Practices
+  resume: true
   items:
   - name: Agile
   - name: Pair Programming

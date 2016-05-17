@@ -1,0 +1,110 @@
+- name: Reciffy
+  description: A recipe management and recommendation app written using Ruby on Rails and AngularJS. Created with a team of four using an Agile development approach and test coverage.
+  github-link: https://github.com/JMazzy/reciffy
+  deploy-link: https://reciffy.herokuapp.com/
+  deploy-link-name: Heroku
+  category: web
+  associated: viking
+  resume: yes
+
+- name: Danebook
+  description: A Facebook clone, built with Ruby on Rails as a solo project for Viking Code School. Built as we learned new technologies.
+  github-link: https://github.com/JMazzy/danebook
+  deploy-link: https://jmazzy-danebook.herokuapp.com
+  deploy-link-name: Heroku
+  category: web
+  associated: viking
+  resume: yes
+
+- name: Djello
+  description: A Trello-like task management app, written in AngularJS and Ruby on Rails.
+  github-link: https://github.com/JMazzy/project-djello
+  deploy-link: https://jmazzy-djello.herokuapp.com
+  deploy-link-name: Heroku
+  category: web
+  associated: viking
+  resume: yes
+
+- name: Fideligard
+  description: A historical stock simulator written in AngularJS. You can pick stocks on a date and see how they would have done during the following weeks and months.
+  github-link: https://github.com/JMazzy/assignment_fideligard_spa
+  deploy-link: none
+  deploy-link-name: Heroku
+  category: web
+  associated: viking
+  resume: no
+
+- name: PokéQuiz
+  description: A group project for Viking Code School. We made a Pokémon-themed quiz app complete with a dashboard to compare quiz scores!
+  github-link: https://github.com/JMazzy/pokequiz
+  deploy-link: https://poke-quiz.herokuapp.com
+  deploy-link-name: Heroku
+  category: web
+  associated: viking
+  resume: no
+
+- name: WookieeDate
+  description: A group project for Viking Code School. We made a Star-Wars-themed pseudo-dating app which matches users with characters!
+  github-link: https://github.com/JMazzy/wookiee-date
+  category: web
+  associated: viking
+  resume: no
+
+- name: Bouncing Ions Live Wallpaper
+  description: My first Android App, available on the Play Store.
+  deploy-link: https://play.google.com/store/apps/details?id=com.jmazzy.ionwallpaper
+  deploy-link-name: Play Store
+  category: mobile
+  associated: solo
+  resume: no
+
+- name: Viking Snake
+  description: Snake was a jQuery practice project for Viking Code School. The "snake" is actually a fleet of Viking ships made from the VCS logo. Collect the treasure and don't collide with your own ships!
+  github-link: https://github.com/JMazzy/snake
+  deploy-link: http://masland-sarani.com/snake
+  deploy-link-name: Demo
+  category: games
+  associated: viking
+  resume: no
+
+- name: Asteroids
+  description: My Asteroids game.
+  github-link: https://github.com/JMazzy/asteroids
+  deploy-link: http://masland-sarani.com/asteroids
+  deploy-link-name: Demo
+  category: games
+  associated: viking
+  resume: no
+
+- name: Tetris
+  description: My Tetris game.
+  github-link: https://github.com/JMazzy/tetris
+  deploy-link: http://masland-sarani.com/tetris
+  deploy-link-name: Demo
+  category: games
+  associated: viking
+  resume: no
+
+- name: Whack-a-mole
+  description: My Whack-A-Mole game.
+  github-link: https://github.com/JMazzy/whack-a-mole
+  deploy-link: http://masland-sarani.com/whack-a-mole
+  deploy-link-name: Demo
+  category: games
+  associated: viking
+  resume: no
+
+- name: Seafarers Map Maker, JavaScript MVC
+  description: I've experimented with a map randomizer for generating map ideas for the awesome Seafarers expansion to the board game Catan. Please note that I am in no way affiliated with anyone who makes the game. It is just a tool to help create random maps. This version uses a custom MVC architecture and jQuery. See below for another version.
+  deploy-link: http://masland-sarani.com/hex-mapper
+  deploy-link-name: Demo
+  category: games
+  associated: solo
+  resume: no
+
+- name: Seafarers Map Maker, HTML5/JavaScript canvas
+  description: Same as above, different implementation.
+  github-link: https://github.com/JMazzy/seafarers-map-maker
+  category: games
+  associated: solo
+  resume: no

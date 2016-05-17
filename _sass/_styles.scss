@@ -2,190 +2,282 @@ $radius: 200px;
 $dark-text: #111;
 $light-text: #E0E9E9;
 $headline: #555;
-$bubble: #455372;
 $shadow: #2D3956;
+$theme: #455372;
+$theme-dark: #344261;
+$theme-light: #566483;
 
-* {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-}
+@media screen {
+	* {
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+	}
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-	color: $headline;
-  font-family: 'Raleway', sans-serif;
-	margin-bottom: 5px;
-}
-
-h2 {
-	margin-top: 15px;
-}
-
-a:link {
-  color: #555;
-}
-
-a:visited {
-  color: #777;
-}
-
-a:hover {
-  color: #337ab7;
-  text-decoration: none;
-}
-
-.container {
-	padding: 20px;
-}
-
-article {
-	padding-bottom: 10px;
-}
-
-.intro {
-	padding: 10px;
-	font-size: 24px;
-	height: $radius * 1.5;
-
-	h1, h2, h3 {
+	h1, h2, h3, h4, h5, h6 {
 		font-weight: bold;
-		color: $dark-text;
-	}
-}
-
-.name {
-	font-weight: bold;
-	font-size: 24px;
-	color: $light-text;
-}
-
-.tagline {
-	font-size: 24px;
-	color: $light-text;
-}
-
-.spacer-row {
-	height: $radius;
-}
-
-.circle {
-  box-shadow: 0 0 10px $shadow;
-
-	color: $light-text;
-	text-shadow: 2px 2px 2px $dark-text;
-	background-color: $bubble;
-
-	vertical-align: middle;
-	text-align: center;
-
-	padding: 35px 25px 25px 25px;
-
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
-	border-radius: $radius;
-
-	font-size: 20px;
-
-	h1, h2, h3 {
-		font-weight: bold;
-		color: $light-text;
-	}
-
-	width: $radius * 2;
-	height: $radius * 2;
-}
-
-.circle:hover {
-	box-shadow: 0 0 20px $shadow;
-}
-
-.circle-headline {
-	font-weight: bold;
-	font-size: 24px;
-}
-
-.headshot {
-	background-image: url("/images/JoshBrick512.jpg");
-	background-repeat: no-repeat;
-  background-position: center;
-	background-size: auto ($radius * 2);
-}
-
-header, footer, .navbar-fixed-bottom {
-	padding: 20px;
-	background-color: $bubble;
-	color: $light-text;
-	box-shadow: 0 0 10px $shadow;
-	text-shadow: 2px 2px 2px $dark-text;
-
-	h1, h2, h3, h4, h5, h6, p {
-		color: $light-text;
-	}
-
-	a:link {
-	  color: $light-text;
-	}
-
-	a:visited {
-	  color: $light-text;
-	}
-
-	a:hover {
-	  color: #337ab7;
-	  text-decoration: none;
-	}
-}
-
-.text-box {
-	padding: 20px;
-	border-radius: 20px;
-}
-
-i.fa {
-  text-align: left;
-  height: 32px;
-  width: 32px;
-}
-
-main {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	min-height: 70vh;
-}
-
-.navbar-bottom {
-	margin-bottom: 50px;
-}
-
-.navbar-fixed-bottom {
-	border-radius: 0;
-	margin: 0;
-}
-
-.skill-card {
-	height: 150px;
-	padding: 15px;
-
-	h3 {
+		color: $headline;
+	  font-family: 'Raleway', sans-serif;
 		margin-bottom: 5px;
 	}
 
-	.skill {
-		margin-bottom: 2px;
+	h1, h3, h5 {
+		font-weight: bold;
 	}
-}
 
-.job-card, .school-card {
-	margin-top: 10px;
-
-	h4 {
+	h2, h4, h6 {
 		font-weight: lighter;
 	}
+
+	h2 {
+		margin-top: 15px;
+	}
+
+	a:link {
+	  color: $theme;
+		font-weight: bold;
+	}
+
+	a:visited {
+	  color: $theme-dark;
+		font-weight: bold;
+	}
+
+	a:hover {
+	  color: $theme-light;
+	  text-decoration: none;
+		font-weight: bolder;
+	}
+
+	.container {
+		padding: 20px;
+	}
+
+	article {
+		padding-bottom: 10px;
+	}
+
+	.intro {
+		padding: 10px;
+		font-size: 24px;
+		height: $radius * 1.5;
+
+		h1, h2, h3 {
+			font-weight: bold;
+			color: $dark-text;
+		}
+	}
+
+	.name {
+		font-weight: bold;
+		font-size: 24px;
+		color: $light-text;
+	}
+
+	.tagline {
+		font-size: 24px;
+		color: $light-text;
+	}
+
+	.spacer-row {
+		height: $radius;
+	}
+
+	.circle {
+	  box-shadow: 0 0 10px $shadow;
+
+		color: $light-text;
+		text-shadow: 2px 2px 2px $dark-text;
+		background-color: $theme;
+
+		vertical-align: middle;
+		text-align: center;
+
+		padding: 35px 25px 25px 25px;
+
+		-moz-border-radius: $radius;
+		-webkit-border-radius: $radius;
+		border-radius: $radius;
+
+		font-size: 20px;
+
+		h1, h2, h3 {
+			font-weight: bold;
+			color: $light-text;
+		}
+
+		width: $radius * 2;
+		height: $radius * 2;
+	}
+
+	.circle:hover {
+		box-shadow: 0 0 20px $shadow;
+	}
+
+	.circle-headline {
+		font-weight: bold;
+		font-size: 24px;
+	}
+
+	.headshot {
+		background-image: url("/images/JoshBrick512.jpg");
+		background-repeat: no-repeat;
+	  background-position: center;
+		background-size: auto ($radius * 2);
+	}
+
+	header, footer, .navbar-fixed-bottom {
+		padding: 20px;
+		background-color: $theme;
+		color: $light-text;
+		box-shadow: 0 0 10px $shadow;
+		text-shadow: 2px 2px 2px $dark-text;
+
+		h1, h2, h3, h4, h5, h6, p {
+			color: $light-text;
+		}
+
+		a:link {
+		  color: $light-text;
+		}
+
+		a:visited {
+		  color: $light-text;
+		}
+
+		a:hover {
+		  color: #337ab7;
+		  text-decoration: none;
+		}
+	}
+
+	.text-box {
+		padding: 20px;
+		border-radius: 20px;
+	}
+
+	i.fa {
+	  text-align: left;
+	  height: 32px;
+	  width: 32px;
+	}
+
+	main {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		min-height: 70vh;
+	}
+
+	.navbar-bottom {
+		margin-bottom: 50px;
+	}
+
+	.navbar-fixed-bottom {
+		border-radius: 0;
+		margin: 0;
+	}
+
+	.skill-card {
+		height: 150px;
+		padding: 15px;
+
+		h3 {
+			margin-bottom: 5px;
+		}
+
+		.skill {
+			margin-bottom: 2px;
+		}
+	}
+
+	.job-card, .school-card, .project-card {
+		margin-top: 10px;
+	}
+
+	.gist {
+		* {
+			font-family: monospace;
+			font-size: 14px;
+		}
+	}
+
 }
 
-.gist {
+@media print {
+
 	* {
-		font-family: monospace;
-		font-size: 14px;
+	  font-family: 'Roboto';
+	  font-size: 12px;
+	  font-weight: 400;
 	}
+
+	h1, h2, h3, h4, h5, h6 {
+	  font-family: 'Raleway';
+	  margin: 0;
+	}
+
+	h2, h4, h6 {
+	  color: $theme !important;
+	  font-weight: 300 !important;
+	}
+
+	h3, h5 {
+	  font-weight: 600 !important;
+	}
+
+	h1 {
+	  font-size: 18px;
+	  color: white;
+	  font-weight: 800 !important;
+	}
+
+	h2 {
+	  font-size: 16px;
+	  margin-top: 20px;
+	}
+
+	h3 {
+	  font-size: 15px;
+	}
+
+	h4 {
+	  font-size: 14px;
+	  font-style: italic;
+	}
+
+	h5 {
+	  font-size: 13px;
+	  margin-top: 5px;
+	}
+
+	h6 {
+	}
+
+	p {
+	  margin: 0;
+	}
+
+	.row {
+	  margin-top: 15px;
+	}
+
+	.projects {
+	  margin-top: 5px;
+	}
+
+	header {
+	  background-color: $theme !important;
+	  padding-bottom: 20px;
+	  margin: 0;
+	  height: 100%;
+	  h1, section, span {
+	    color: white !important;
+	  }
+	}
+
+	footer {
+	  background-color: $theme !important;
+	  min-height: 20px;
+	  margin-top: 20px;
+	}
+
 }
