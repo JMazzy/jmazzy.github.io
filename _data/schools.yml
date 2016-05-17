@@ -2,22 +2,28 @@
   date: 2016
   program: Intensive Program (Bootcamp)
   description: A highly selective training program for learning professional agile software development. The 16-week intensive program includes daily projects, scrum meetings, pair programming, and code review. Gained depth and breadth of knowledge in Ruby, Rails, JavaScript, jQuery, and AngularJS. Learned testing, Agile best practices, and deployment.
-  resume: yes
+  resume: true
 
 - name: Wesley Theological Seminary
   date: 2007-2010
   program: M.Div., with Honors
   description: Theology, Biblical Interpretation, Church Leadership, Counseling, and more. Included an internship and intercultural immersion.
-  resume: yes
+  resume: true
 
 - name: Ithaca College
   date: 2004-2007
   program: B.S., Chemistry, Summa Cum Laude
   description: Advanced Organic Chemistry, NMR Spectroscopy, Physics, Calculus, and more. I also was a leader in the campus ministry and played guitar.
-  resume: yes
+  resume: true
 
 - name: Juniata College
   date: 2003-2004
   program: Chemistry
   description: Chemistry, Calculus, Jazz Band, and more.
-  resume: no
+  resume: false
+
+- name: Sidney High School
+  date: 1999-2003
+  program: High School Diploma, Valedictorian
+  description: Learned, played guitar, and ran cross country and track. I took every science class offered.
+  resume: false
