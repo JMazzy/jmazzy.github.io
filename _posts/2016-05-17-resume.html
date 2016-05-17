@@ -90,68 +90,18 @@ permalink: /resume/
 </div>
 
 <h2>Experience</h2>
-
-<div class="row">
-  <div class="col-xs-5">
-    <h3>The Arc of Pennsylvania</h3>
-    <h4>2015</h4>
+{% assign jobs = site.data.jobs | where: "resume", "true" %}
+{% for job in jobs %}
+  <div class="row">
+    <div class="col-xs-4">
+      <h3>{{ job.employer }}</h3>
+      <h4>{{ job.date }}</h4>
+    </div>
+    <div class="col-xs-8">
+      <h4>{{ job.title }}</h4>
+      <p>
+        {{ job.description }}
+      </p>
+    </div>
   </div>
-  <div class="col-xs-7">
-    <h4>Communications Consultant</h4>
-    <p>
-      Improved their website and consulted about potential upgrades. Wrote and edited web and print content distributed to over 8,000 chapter members.
-    </p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-5">
-    <h3>Self Employed</h3>
-    <h4>2013-2015</h4>
-  </div>
-  <div class="col-xs-7">
-    <h4>Dad and Coder</h4>
-    <p>
-      I was a stay at home dad for my daughter, while also teaching myself computer programming and writing apps.
-    </p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-5">
-    <h3>United Methodist Church</h3>
-    <h4>2010-2013</h4>
-  </div>
-  <div class="col-xs-7">
-    <h4>Pastor</h4>
-    <p>
-      Led congregations of hundreds of members in worship, preaching, counseling, and administration. Played a role in leading the churches in technology and web presence. Created a website for one of the churches.
-    </p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-5">
-    <h3>University of Washington</h3>
-    <h4>2006</h4>
-  </div>
-  <div class="col-xs-7">
-    <h4>Summer Research Intern</h4>
-    <p>
-      Graduate-level scientific research doing synthesis, spectroscopy, and product characterization, and data analysis. Published as a co-author in the work of a Ph.D. student.
-    </p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-5">
-    <h3>Ithaca College</h3>
-    <h4>2005-2006</h4>
-  </div>
-  <div class="col-xs-7">
-    <h4>Teaching Assistant and Researcher</h4>
-    <p>
-      Taught and supervised Organic Chemistry labs and performed chemistry research. Published as a co-author in the work of a professor.
-    </p>
-  </div>
-</div>
+{% endfor %}
