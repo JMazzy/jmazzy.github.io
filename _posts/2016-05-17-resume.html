@@ -93,11 +93,11 @@ permalink: /resume/
 {% assign jobs = site.data.jobs | where: "resume", "true" %}
 {% for job in jobs %}
   <div class="row">
-    <div class="col-xs-4">
+    <div class="col-xs-5">
       <h3>{{ job.employer }}</h3>
       <h4>{{ job.date }}</h4>
     </div>
-    <div class="col-xs-8">
+    <div class="col-xs-7">
       <h4>{{ job.title }}</h4>
       <p>
         {{ job.description }}

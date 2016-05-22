@@ -217,17 +217,17 @@ $theme-light: #566483;
 
 	h2, h4, h6 {
 	  color: $theme !important;
-	  font-weight: 300 !important;
+	  font-weight: normal !important;
 	}
 
 	h3, h5 {
-	  font-weight: 600 !important;
+	  font-weight: bold !important;
 	}
 
 	h1 {
 	  font-size: 18px;
 	  color: white;
-	  font-weight: 800 !important;
+	  font-weight: bolder !important;
 	}
 
 	h2 {
