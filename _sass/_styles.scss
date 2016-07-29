@@ -354,7 +354,6 @@ $theme-light: #566483;
   border-radius: 25px;
   background: linear-gradient(90deg, #A3DB97, #24CCA8);
   color: #AEFCE4;
-	font-weight: normal;
 
   a {
     line-height: 36px;
@@ -363,6 +362,10 @@ $theme-light: #566483;
     color: #AEFCE4;
     vertical-align: middle;
   }
+
+	a:visited {
+		font-weight: normal;
+	}
 
   a:hover {
     color: #EEE;
