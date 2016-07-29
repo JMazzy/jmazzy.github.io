@@ -281,3 +281,131 @@ $theme-light: #566483;
 	}
 
 }
+
+
+.pokeholder {
+  background: transparent;
+  font-size: 18px;
+  position: relative;
+  width: 390px;
+  height: 948px;
+}
+
+.pokecard {
+  background-color: white;
+  color: #40676C;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.pokelabel {
+  color: #737373;
+  font-size: 15px;
+}
+
+.pokescreen-top {
+  height: 220px;
+}
+
+.pokepic {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+.hp {
+  color: black;
+}
+
+.hp-bar {
+  height: 4px;
+  background-color: #6DEFB6;
+}
+
+.pokeline {
+  height: 1px;
+  background-color: #999999;
+}
+
+.poketext {
+  margin-bottom: 0;
+}
+
+.name {
+  margin-bottom: 5px;
+}
+
+.pokebutton {
+  height: 36px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #A3DB97, #24CCA8);
+  color: #AEFCE4;
+
+  a {
+    line-height: 36px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #AEFCE4;
+    vertical-align: middle;
+  }
+
+  a:hover {
+    color: #EEE;
+  }
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+.skill-bar {
+  height: 4px;
+  background-color: #11C6FB;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.button-row {
+  background: linear-gradient(90deg, #FFF, #E8F1E0);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.button-row-text {
+  font-size: 15px;
+  line-height: 36px;
+}
+
+.cp {
+  height: 180px;
+  width: 360px;
+  margin-top: 10px;
+  color: white;
+}
+
+.cp-bar {
+  height: inherit;
+  width: inherit;
+  background-color: transparent;
+  // // border: 5px solid rgba(200,200,200,50);
+  // border-bottom-color: transparent;
+  // border-top-right-radius: 360px;
+  // border-top-left-radius: 360px;
+}
+
+.cp-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#pokeanimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 948px;
+  z-index: -1;
+}
