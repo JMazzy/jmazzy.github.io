@@ -1,19 +1,19 @@
 - employer: The Arc of Pennsylvania
-  date: 2015
+  date: 2015-2016
   title: Communications Consultant
-  description: Improved their website and consulted about potential upgrades. Wrote and edited web and print content distributed to over 8,000 chapter members.
+  description: Wrote and edited web and print publications distributed to members and the public. Consulted them on a new website.
   resume: true
 
 - employer: Self Employed
   date: 2013-2015
-  title: Dad and Coder
-  description: I was a stay at home dad for my daughter, while also teaching myself computer programming and writing apps.
+  title: Stay-At-Home Dad and Coder
+  description: I was a stay at home dad for my daughter, while also learning computer programming.
   resume: true
 
 - employer: The United Methodist Church
   date: 2010-2013
   title: Pastor
-  description: Led congregations of hundreds of members in worship, preaching, counseling, and administration. Played a role in leading the churches in technology and web presence. Created a website for one of the churches.
+  description: Led congregations in worship, preaching, counseling, and administration. Played a role in leading the churches in technology and web presence.
   resume: true
 
 - employer: Wesley Theological Seminary

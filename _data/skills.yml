@@ -1,24 +1,42 @@
-- name: Front End
+- name: Languages
   resume: true
+  items:
+    - name: Ruby
+    - name: HTML5
+    - name: CSS3
+    - name: JavaScript
+    - name: Java
+
+- name: Frameworks
+  resume: true
+  items:
+    - name: Ruby on Rails
+    - name: Sinatra
+    - name: jQuery
+    - name: AngularJS
+    - name: Android
+
+- name: Front End
+  resume: false
   items:
     - name: HTML5
     - name: CSS3
 
 - name: JavaScript
-  resume: true
+  resume: false
   items:
     - name: jQuery
     - name: AngularJS
 
 - name: Ruby
-  resume: true
+  resume: false
   items:
   - name: Rails
   - name: Sinatra
   - name: RSpec
 
 - name: Java
-  resume: true
+  resume: false
   items:
   - name: Android SDK
   - name: libGDX
@@ -33,7 +51,8 @@
 - name: Tools
   resume: true
   items:
-  - name: Git and GitHub
+  - name: Git
+  - name: GitHub
   - name: Pivotal Tracker
 
 - name: Practices

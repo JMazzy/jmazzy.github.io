@@ -1,7 +1,7 @@
 - name: Viking Code School
   date: 2016
-  program: Intensive Program (Bootcamp)
-  description: A highly selective training program for learning professional agile software development. The 16-week intensive program includes daily projects, scrum meetings, pair programming, and code review. Gained depth and breadth of knowledge in Ruby, Rails, JavaScript, jQuery, and AngularJS. Learned testing, Agile best practices, and deployment.
+  program: Intensive Program / Bootcamp
+  description: A 16-week, full-time, highly selective training program for learning professional agile software development. It included daily projects, scrum meetings, pair programming, and code review. The course focused on Ruby on Rails and AngularJS, and emphasized testing and best practices.
   resume: true
 
 - name: Wesley Theological Seminary

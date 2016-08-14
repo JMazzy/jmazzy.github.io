@@ -7,6 +7,11 @@ $theme: #455372;
 $theme-dark: #344261;
 $theme-light: #566483;
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 @media screen {
 	* {
 		font-family: 'Roboto', sans-serif;
@@ -26,6 +31,7 @@ $theme-light: #566483;
 
 	h2, h4, h6 {
 		font-weight: lighter;
+		color: $theme-dark;
 	}
 
 	h2 {
@@ -207,17 +213,18 @@ $theme-light: #566483;
 	* {
 	  font-family: 'Roboto';
 	  font-size: 12px;
-	  font-weight: 400;
+		margin: 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		color: $headline !important;
 	  font-family: 'Raleway';
 	  margin: 0;
 	}
 
 	h2, h4, h6 {
 	  color: $theme !important;
-	  font-weight: normal !important;
+	  font-weight: bold !important;
 	}
 
 	h3, h5 {
@@ -233,6 +240,7 @@ $theme-light: #566483;
 	h2 {
 	  font-size: 16px;
 	  margin-top: 10px;
+		font-weight: bolder !important;
 	}
 
 	h3 {
@@ -241,7 +249,6 @@ $theme-light: #566483;
 
 	h4 {
 	  font-size: 14px;
-	  font-style: italic;
 	}
 
 	h5 {
@@ -249,35 +256,36 @@ $theme-light: #566483;
 	  margin-top: 5px;
 	}
 
-	h6 {
-	}
-
 	p {
 	  margin: 0;
 	}
 
 	.row {
-	  margin-top: 15px;
-	}
-
-	.projects {
 	  margin-top: 5px;
 	}
 
 	header {
 	  background-color: $theme !important;
-	  padding-bottom: 20px;
+	  padding: 20px;
 	  margin: 0;
 	  height: 100%;
 	  h1, section, span {
 	    color: white !important;
 	  }
+
+		section, span {
+			font-size: 16px;
+		}
+	}
+
+	main {
+		padding: 15px;
 	}
 
 	footer {
 	  background-color: $theme !important;
 	  min-height: 20px;
-	  margin-top: 20px;
+	  padding: 20px;
 	}
 }
 
