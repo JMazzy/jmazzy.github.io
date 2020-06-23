@@ -1,3 +1,15 @@
+- employer: Listrak
+  date: 2019-Current
+  title: Application Developer
+  description: Develop web applications, APIs, and backend services to help give our clients the best experience possible.
+  resume: true
+
+- employer: Listrak
+  date: 2016-2019
+  title: Quality Assurance Engineer
+  description: Automated and exploratory testing of web applications, APIs, and backend services to help ensure the quality of our code.
+  resume: true
+
 - employer: The Arc of Pennsylvania
   date: 2015-2016
   title: Communications Consultant
@@ -44,13 +56,13 @@
   date: 2006
   title: Summer Research Intern
   description: Graduate-level scientific research doing synthesis, spectroscopy, and product characterization, and data analysis. Published as a co-author in the work of a Ph.D. student.
-  resume: true
+  resume: false
 
 - employer: Ithaca College
   date: 2005-2006
   title: Teaching Assistant and Researcher
   description: Taught and supervised Organic Chemistry labs and performed chemistry research. Published as a co-author in the work of a professor.
-  resume: true
+  resume: false
 
 - employer: Amphenol
   date: 2004
