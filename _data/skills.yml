@@ -1,20 +1,18 @@
 - name: Languages
   resume: true
   items:
-    - name: Ruby
-    - name: HTML5
-    - name: CSS3
+    - name: C#
+    - name: HTML
+    - name: CSS
     - name: JavaScript
-    - name: Java
+    - name: Ruby
+    - name: SQL
 
 - name: Frameworks
   resume: true
   items:
     - name: Ruby on Rails
-    - name: Sinatra
-    - name: jQuery
-    - name: AngularJS
-    - name: Android
+    - name: .NET Core
 
 - name: Front End
   resume: false
@@ -53,11 +51,12 @@
   items:
   - name: Git
   - name: GitHub
-  - name: Pivotal Tracker
+  - name: Bitbucket
+  - name: Jira
 
 - name: Practices
   resume: true
   items:
-  - name: Agile
-  - name: Pair Programming
+  - name: Agile Development
+  - name: Pair/Mob Programming
   - name: TDD
