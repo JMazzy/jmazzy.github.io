@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen {
+  * {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #555;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 5px;
+  }
+  h1, h3, h5 {
+    font-weight: bold;
+  }
+  h2, h4, h6 {
+    font-weight: lighter;
+    color: #344261;
+  }
+  h2 {
+    margin-top: 15px;
+  }
+  a:link {
+    color: #455372;
+    font-weight: bold;
+  }
+  a:visited {
+    color: #344261;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #566483;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .container {
+    padding: 20px;
+  }
+  article {
+    padding-bottom: 10px;
+  }
+  .intro {
+    padding: 10px;
+    font-size: 24px;
+    height: 300px;
+  }
+  .intro h1, .intro h2, .intro h3 {
+    font-weight: bold;
+    color: #111;
+  }
+  .name {
+    font-weight: bold;
+    font-size: 24px;
+    color: #E0E9E9;
+  }
+  .tagline {
+    font-size: 24px;
+    color: #E0E9E9;
+  }
+  .spacer-row {
+    height: 200px;
+  }
+  .circle {
+    box-shadow: 0 0 10px #2D3956;
+    color: #E0E9E9;
+    text-shadow: 2px 2px 2px #111;
+    background-color: #455372;
+    vertical-align: middle;
+    text-align: center;
+    padding: 35px 25px 25px 25px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    border-radius: 200px;
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+  }
+  .circle h1, .circle h2, .circle h3 {
+    font-weight: bold;
+    color: #E0E9E9;
+  }
+  .circle:hover {
+    box-shadow: 0 0 20px #2D3956;
+  }
+  .circle-headline {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .headshot {
+    background-image: url("/images/JoshBrick512.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 400px;
+  }
+  header, footer, .navbar-fixed-bottom {
+    padding: 20px;
+    background-color: #455372;
+    color: #E0E9E9;
+    box-shadow: 0 0 10px #2D3956;
+    text-shadow: 2px 2px 2px #111;
+  }
+  header h1, header h2, header h3, header h4, header h5, header h6, header p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, .navbar-fixed-bottom h1, .navbar-fixed-bottom h2, .navbar-fixed-bottom h3, .navbar-fixed-bottom h4, .navbar-fixed-bottom h5, .navbar-fixed-bottom h6, .navbar-fixed-bottom p {
+    color: #E0E9E9;
+  }
+  header a:link, footer a:link, .navbar-fixed-bottom a:link {
+    color: #E0E9E9;
+  }
+  header a:visited, footer a:visited, .navbar-fixed-bottom a:visited {
+    color: #E0E9E9;
+  }
+  header a:hover, footer a:hover, .navbar-fixed-bottom a:hover {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  .text-box {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  i.fa {
+    text-align: left;
+    height: 32px;
+    width: 32px;
+  }
+  main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 70vh;
+  }
+  .navbar-bottom {
+    margin-bottom: 50px;
+  }
+  .navbar-fixed-bottom {
+    border-radius: 0;
+    margin: 0;
+  }
+  .skill-card {
+    padding: 15px;
+  }
+  .skill-card h3 {
+    margin-bottom: 5px;
+  }
+  .skill-card .skill {
+    margin-bottom: 2px;
+  }
+  .job-card, .school-card, .project-card {
+    margin-top: 10px;
+  }
+  .gist * {
+    font-family: monospace;
+    font-size: 14px;
+  }
+}
+@media print {
+  * {
+    font-family: "Roboto";
+    font-size: 12px;
+    margin: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #555 !important;
+    font-family: "Raleway";
+    margin: 0;
+  }
+  h2, h4, h6 {
+    color: #455372 !important;
+    font-weight: bold !important;
+  }
+  h3, h5 {
+    font-weight: bold !important;
+  }
+  h1 {
+    font-size: 18px;
+    color: white;
+    font-weight: bolder !important;
+  }
+  h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bolder !important;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  p {
+    margin: 0;
+  }
+  .row {
+    margin-top: 5px;
+  }
+  header {
+    background-color: #455372 !important;
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+  }
+  header h1, header section, header span {
+    color: white !important;
+  }
+  header section, header span {
+    font-size: 16px;
+  }
+  main {
+    padding: 15px;
+  }
+  footer {
+    background-color: #455372 !important;
+    min-height: 20px;
+    padding: 20px;
+  }
+}
+.pokeholder {
+  background: transparent;
+  font-size: 18px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 390px;
+  height: 948px;
+}
+.pokecard {
+  background-color: white;
+  color: #40676C;
+  border-radius: 5px;
+  padding-top: 15px;
+  margin: 5px;
+  padding: 5px;
+}
+.pokecard h2 {
+  color: #40676C;
+}
+.pokelabel {
+  color: #737373;
+  font-size: 15px;
+}
+
+.pokescreen-top {
+  height: 220px;
+}
+
+.pokepic {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-top: 5px;
+}
+
+.hp {
+  color: black;
+}
+
+.hp-bar {
+  height: 4px;
+  background-color: #6DEFB6;
+}
+
+.pokeline {
+  height: 1px;
+  background-color: #999999;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.poketext {
+  margin-bottom: 0;
+}
+
+.name {
+  margin-bottom: 5px;
+}
+
+.pokebutton {
+  height: 36px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #A3DB97, #24CCA8);
+  color: #AEFCE4;
+}
+.pokebutton a {
+  line-height: 36px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #AEFCE4;
+  vertical-align: middle;
+}
+.pokebutton a:visited {
+  font-weight: normal;
+}
+.pokebutton a:hover {
+  color: #EEE;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+.skill-bar {
+  height: 4px;
+  background-color: #11C6FB;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-row {
+  background: linear-gradient(90deg, #FFF, #E8F1E0);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.button-row-text {
+  font-size: 15px;
+  line-height: 36px;
+}
+
+.cp {
+  height: 180px;
+  width: 360px;
+  margin-top: 10px;
+  color: white;
+}
+
+.cp-bar {
+  height: inherit;
+  width: inherit;
+  background-color: transparent;
+}
+
+.cp-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#pokeanimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 948px;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=main.css.map */
