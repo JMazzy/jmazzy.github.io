@@ -1,3 +1,7 @@
-_site
-.sass-cache
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/
 .jekyll-metadata
+.bundle/
+vendor/
